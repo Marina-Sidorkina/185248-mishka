@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Marina Sidorkina](https://up.htmlacademy.ru/adaptive/14/user/185248).
-* Наставник: `Неизвестно`.
+* Наставник: `Лиза Позднякова`.
 
 ---
 
