@@ -5,15 +5,18 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+
     <header class="page-header">
+      <div class="extra">
+        <a class="extra__link" href="#">
+          <picture>
+            <img class="extra__logo" src="http://placehold.it/86x35" alt="">
+          </picture>
+        </a>
+        <button class="extra__button" type="button" name="button"></button>
+      </div>
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              <img class="navigation__logo" src="http://placehold.it/86x35" alt="">
-            </a>
-            <button type="button" name="button"></button>
-          </li>
           <li class="navigation__item">Каталог товаров</li>
           <li class="navigation__item">Вязание на заказ</li>
           <li class="navigation__item">Поиск по сайту</li>
@@ -28,8 +31,8 @@
         <p class="forms__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </section>
       <form class="forms__list">
-        <fieldset class="forms__item type">
-          <legend class="type__legend">Тип</legend>
+        <section class="forms__item type">
+          <h2 class="type__legend">Тип</h2>
           <ul class="type__list">
             <li class="type__option">
               <input class="type__radio" type="radio" name="type" value="" id="interior" checked>
@@ -40,9 +43,9 @@
               <label class="type__descr" for="toys">Детская игрушка</label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="forms__item color">
-          <legend class="color__legend">Цвет</legend>
+        </section>
+        <section class="forms__item color">
+          <h2 class="color__legend">Цвет</h2>
           <ul class="color__list">
             <li class="color__option">
               <input class="color__check" type="checkbox" name="color" value="white" id="white" checked>
@@ -69,9 +72,9 @@
               <label class="color__descr" for="orange">Оранжевый</label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="forms__item user-form">
-          <legend class="user-form__legend">ФИО</legend>
+        </section>
+        <section class="forms__item user-form">
+          <h2 class="user-form__legend">ФИО</h2>
           <ul class="user-form__list">
             <li class="user-form__item name">
               <label class="visually-hidden" for="name">Имя:</label>
@@ -86,23 +89,23 @@
               <input class="second-name__input" type="text" value="Отчество, если желаете" id="second-name">
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="forms__item tel">
-          <legend class="tel__legend">Тел</legend>
+        </section>
+        <section class="forms__item tel">
+          <h2 class="tel__legend">Тел</h2>
           <input class="tel__input" type="tel" value="+7 XXX XX XX^">
-        </fieldset>
-        <fieldset class="forms__item email">
-          <legend class="email__legend">E-mail</legend>
+        </section>
+        <section class="forms__item email">
+          <h2 class="email__legend">E-mail</h2>
           <input class="email__input" type="email" value="Ваш Email^">
-        </fieldset>
-        <fieldset class="forms__item addit">
-          <legend class="addit__legend">Доп</legend>
+        </section>
+        <section class="forms__item addit">
+          <h2 class="addit__legend">Доп</h2>
           <textarea class="addit__input" name="name" rows="8" cols="80">Опишите все ваши пожелания к заказу</textarea>
           <div class="forms__send">
             <p class="forms__note">*Поля обязательны для заполнения</p>
             <button class="forms__button" type="submit" formmethod="get" formaction="https://echo.htmlacademy.ru" name="button">Отправить заказ</button>
           </div>
-        </fieldset>
+        </section>
       </form>
     </main>
 
