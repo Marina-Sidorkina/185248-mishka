@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="extra">
+        <a class="extra__link" href="#">
+          <picture>
+            <img class="extra__logo" src="http://placehold.it/86x35" alt="">
+          </picture>
+        </a>
+        <button class="extra__button" type="button" name="button"></button>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">Каталог товаров</li>
+          <li class="navigation__item">Вязание на заказ</li>
+          <li class="navigation__item">Поиск по сайту</li>
+          <li class="navigation__item">Корзина пока пуста</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="forms">
+      <section class="forms__promo">
+        <h1 class="forms__title">Вязание на заказ</h1>
+        <p class="forms__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </section>
+      <form class="forms__list">
+        <section class="forms__item type">
+          <h2 class="type__legend">Тип</h2>
+          <ul class="type__list">
+            <li class="type__option">
+              <input class="type__radio" type="radio" name="type" value="" id="interior" checked>
+              <label class="type__descr" for="interior">Аксессуар для интерьера</label>
+            </li>
+            <li class="type__option">
+              <input class="type__radio" type="radio" name="type" value="" id="toys">
+              <label class="type__descr" for="toys">Детская игрушка</label>
+            </li>
+          </ul>
+        </section>
+        <section class="forms__item color">
+          <h2 class="color__legend">Цвет</h2>
+          <ul class="color__list">
+            <li class="color__option">
+              <input class="color__check" type="checkbox" name="color" value="white" id="white" checked>
+              <label class="color__descr" for="white">Белый</label>
+            </li>
+            <li class="color__option">
+              <input class="color__check" type="checkbox" name="color" value="grey" id="grey" checked>
+              <label class="color__descr" for="grey">Серый</label>
+            </li>
+            <li class="color__option">
+              <input class="color__check" type="checkbox" name="color" value="tiffany" id="tiffany">
+              <label class="color__descr" for="tiffany">"Тиффани"</label>
+            </li>
+            <li class="color__option">
+              <input class="color__check" type="checkbox" name="color" value="black" id="black">
+              <label class="color__descr" for="black">Черный</label>
+            </li>
+            <li class="color__option">
+              <input class="color__check" type="checkbox" name="color" value="pink" id="pink">
+              <label class="color__descr" for="pink">Розовый</label>
+            </li>
+            <li class="color__option">
+              <input class="color__check" type="checkbox" name="color" value="orange" id="orange">
+              <label class="color__descr" for="orange">Оранжевый</label>
+            </li>
+          </ul>
+        </section>
+        <section class="forms__item user-form">
+          <h2 class="user-form__legend">ФИО</h2>
+          <ul class="user-form__list">
+            <li class="user-form__item name">
+              <label class="visually-hidden" for="name">Имя:</label>
+              <input class="name__input" type="text" value="Введите ваше имя*" id="name">
+            </li>
+            <li class="user-form__item surname">
+              <label class="visually-hidden" for="surname">Фамилия:</label>
+              <input class="surname__input" type="text" value="Укажите фамилию*" id="surname">
+            </li>
+            <li class="user-form__item second-name">
+              <label class="visually-hidden" for="second-name">Отчество:</label>
+              <input class="second-name__input" type="text" value="Отчество, если желаете" id="second-name">
+            </li>
+          </ul>
+        </section>
+        <section class="forms__item tel">
+          <h2 class="tel__legend">Тел</h2>
+          <input class="tel__input" type="tel" value="+7 XXX XX XX^">
+        </section>
+        <section class="forms__item email">
+          <h2 class="email__legend">E-mail</h2>
+          <input class="email__input" type="email" value="Ваш Email^">
+        </section>
+        <section class="forms__item addit">
+          <h2 class="addit__legend">Доп</h2>
+          <textarea class="addit__input" name="name" rows="8" cols="80">Опишите все ваши пожелания к заказу</textarea>
+          <div class="forms__send">
+            <p class="forms__note">*Поля обязательны для заполнения</p>
+            <button class="forms__button" type="submit" formmethod="get" formaction="https://echo.htmlacademy.ru" name="button">Отправить заказ</button>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="social">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+          <a class="social__link" href="#">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </div>
+        <div class="copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="#">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
