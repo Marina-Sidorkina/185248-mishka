@@ -7,14 +7,16 @@
   <body>
 
     <header class="page-header">
+      <div class="extra">
+        <a class="extra__link" href="#">
+          <picture>
+            <img class="extra__logo" src="http://placehold.it/86x35" alt="">
+          </picture>
+        </a>
+        <button class="extra__button" type="button" name="button"></button>
+      </div>
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              <img class="navigation__logo" src="http://placehold.it/86x35" alt="">
-            </a>
-            <button type="button" name="button"></button>
-          </li>
           <li class="navigation__item">Каталог товаров</li>
           <li class="navigation__item">Вязание на заказ</li>
           <li class="navigation__item">Поиск по сайту</li>
@@ -24,10 +26,9 @@
     </header>
 
     <main class="index">
-      <h1 class="visually-hidden">Интернет-магазин "Мишка"</h1>
       <section class="promo">
         <div class="promo__container">
-          <p class="promo__description">Милые штуки ручной работы для дома</p>
+          <h1 class="promo__description">Милые штуки ручной работы для дома</h1>
           <a class="promo__item-one" href="#">
             <b class="promo__title-one">Предметы интерьера</b>
           </a>
@@ -38,10 +39,8 @@
       </section>
       <section class="advert">
         <div class="advert__container">
-          <h2 class="advert__header">
-            <span class="advert__product">Вязаные корзинки</span>
-            <span class="advert__category">Товар недели</span>
-          </h2>
+          <h2 class="advert__header">Вязаные корзинки</h2>
+          <p class="advert__category">Товар недели</p>
           <p class="advert__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="advert__specification product-details">
             <tr>
@@ -88,8 +87,8 @@
             </cite>
           </blockquote>
           <div class="feedback__toggle">
-            <span class="feedback__left"></span>
-            <span class="feedback__right"></span>
+            <button class="feedback__left" type="button"></button>
+            <button class="feedback__right" type="button"></button>
           </div>
           <a class="feedback__add-link" href="#">Написать</a>
         </div>
@@ -140,13 +139,18 @@
     <div class="modal">
       <div class="modal__container">
         <h3 class="modal__header">Добавить в корзину</h3>
-        <span class="modal__choice">Выберите размер:</span>
-        <div class="modal__list size">
-          <span class="size__1">S</span>
-          <span class="size__2">M</span>
-          <span class="size__3">N</span>
-        </div>
-        <a class="modal__link" href="#"></a>
+        <form class="modal__form">
+          <p class="modal__choice">Выберите размер:</p>
+          <div class="modal__list size">
+            <input class="size__radio" type="radio" name="size" id="siaze-1" value="size-1">
+            <label class="size__1" for="siaze-1">S</label>
+            <input class="size__radio" type="radio" name="size" id="size-2" value="size-2">
+            <label class="size__2" for="size-2">M</label>
+            <input class="size__radio" type="radio" name="size" id="siaze-3" value="size-3">
+            <label class="size__3" for="siaze-3">N</label>
+          </div>
+          <button class="modal__button" type="submit" formmethod="get" formaction="https://echo.htmlacademy.ru" name="button">Добавить</button>
+        </form>
       </div>
     </div>
 
