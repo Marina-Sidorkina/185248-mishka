@@ -1,0 +1,26 @@
+.page-body {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  @include font-base-1();
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-1;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

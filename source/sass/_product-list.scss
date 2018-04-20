@@ -1,0 +1,29 @@
+.product-list {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+
+  @include font-base-2();
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-1;
+
+  background-color: #ffffff;
+}
+
+.product-list__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  width: 320px;
+}
+
+.product-list__item {
+  margin: 0;
+  padding: 0;
+}

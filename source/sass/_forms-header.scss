@@ -1,0 +1,37 @@
+.forms-header {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  height: 177px;
+  padding: 0;
+  margin: 0 auto;
+
+  background-color: #f1f1f1;
+  border-top: 1px solid #ececec;
+}
+
+.forms-header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  width: 260px;
+  height: 177px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.forms-header__title {
+  box-sizing: border-box;
+  width: 260px;
+  height: 30px;
+
+  @include font-base-2();
+  font-size: 27px;
+  line-height: 30px;
+  color: $color-1;
+
+  text-align: center;
+}
