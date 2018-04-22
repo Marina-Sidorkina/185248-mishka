@@ -5,12 +5,13 @@
   padding: 0;
   margin: 0 auto;
 
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: $color-1;
+  color: $black;
 
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .page-header__container {
@@ -23,8 +24,9 @@
   margin-left: auto;
   margin-right: auto;
 
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: $color-1;
+  color: $black;
 }

@@ -5,7 +5,7 @@
   margin: 0 auto;
   margin-top: 30px;
 
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .production__container {
@@ -16,7 +16,7 @@
   padding: 0;
   margin: 0 auto;
 
-  border: 1px solid #ececec;
+  border: 1px solid $gray--light;
 }
 
 .production__header {
@@ -32,10 +32,11 @@
 
 .production__title {
   width: 130px;
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: $color-1;
+  color: $black;
 }
 
 .production__description {
@@ -47,10 +48,11 @@
   padding-top: 34px;
   margin-left: 34px;
 
-  @include font-base-1();
+  font-family: $default-font;
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  color: $color-2;
+  color: $gray;
 }
 
 .production__link {
@@ -61,13 +63,14 @@
   margin-left: 34px;
   margin-bottom: 32px;
 
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 17px;
   line-height: 17px;
-  color: $color-2;
+  color: $gray;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid $color-2;;
+  border: 2px solid $gray;;
   cursor: pointer;
 }

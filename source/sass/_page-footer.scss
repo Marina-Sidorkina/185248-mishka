@@ -6,10 +6,11 @@
   margin: 0 auto;
 
 
-  @include font-base-1();
-  color: $color-2;
+  font-family: $default-font;
+  font-weight: 400;
+  color: $gray;
 
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .page-footer__container {
@@ -20,36 +21,4 @@
   width: 260px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.social {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  box-sizing: border-box;
-  height: 81px;
-  padding-left: 58px;
-
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.social__link {
-  margin-right: 40px;
-}
-
-.copyright {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  height: 79px;
-}
-
-.copyright__text {
-  margin-right: 30px;
-}
-
-.copyright__svg {
-  fill: #63d1bb;
 }

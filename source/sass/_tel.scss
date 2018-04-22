@@ -17,10 +17,11 @@
   padding: 0;
   margin: 0;
 
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 17px;
   line-height: 17px;
-  color: #63d1bb;
+  color: $blue;
 
   text-transform: uppercase;
 }
@@ -30,5 +31,5 @@
   height: 52px;
 
   border: none;
-  border-bottom: 2px solid $color-1;
+  border-bottom: 2px solid $gray;
 }

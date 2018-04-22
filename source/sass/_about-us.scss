@@ -5,11 +5,11 @@
   padding: 0;
   margin: 0 auto;
 
+  font-family: $default-font;
+  font-weight: 700;
+  color: $black;
 
-  @include font-base-2();
-  color: $color-1;
-
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .about-us__container {
@@ -31,7 +31,7 @@
 
   font-size: 25px;
   line-height: 30px;
-  color: $color-1;
+  color: $black;
 }
 
 .about-us__list {
@@ -44,10 +44,10 @@
 
   font-size: 17px;
   line-height: 20px;
-  color: $color-1;
+  color: $black;
 }
 
-.about-us__detail-one {
+.about-us__detail--eco {
   display: flex;
   flex-direction: column;
 
@@ -55,11 +55,11 @@
   height: 124px
 }
 
-.about-us__text-1 {
+.about-us__text--eco {
   width: 175px;
 }
 
-.about-us__detail-two {
+.about-us__detail--style {
   display: flex;
   flex-direction: column;
 
@@ -67,11 +67,11 @@
   height: 128px
 }
 
-.about-us__text-2 {
+.about-us__text--style {
   width: 200px;
 }
 
-.about-us__detail-three {
+.about-us__detail--likes {
   display: flex;
   flex-direction: column;
 
@@ -79,11 +79,11 @@
   height: 120px
 }
 
-.about-us__text-3 {
+.about-us__text--likes {
   width: 200px;
 }
 
-.about-us__detail-four {
+.about-us__detail--handmade {
   display: flex;
   flex-direction: column;
 
@@ -91,11 +91,11 @@
   height: 124px
 }
 
-.about-us__text-4 {
+.about-us__text--handmade {
   width: 215px;
 }
 
-.about-us__detail-five {
+.about-us__detail--support {
   display: flex;
   flex-direction: column;
 
@@ -103,11 +103,11 @@
   height: 121px
 }
 
-.about-us__text-5 {
+.about-us__text--support {
   width: 250px;
 }
 
-.about-us__detail-six {
+.about-us__detail--gift {
   display: flex;
   flex-direction: column;
 
@@ -115,6 +115,6 @@
   height: 120px;
 }
 
-.about-us__text-6 {
+.about-us__text-gift {
   width: 200px;
 }

@@ -5,10 +5,11 @@
   padding: 0;
   margin: 0 auto;
 
-  @include font-base-2();
-  color: #ffffff;
+  font-family: $default-font;
+  font-weight: 700;
+  color: $white;
 
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .promo__container-one {
@@ -33,7 +34,7 @@
 .promo__align {
   font-size: 27px;
   line-height: 30px;
-  color: $color-1;
+  color: $black;
   text-align: center;
 }
 
@@ -53,19 +54,21 @@
   width: 320px;
   height: 103px;
 
-  @include font-base-2();
-  color: #ffffff;
+  font-family: $default-font;
+  font-weight: 700;
+  color: $white;
   text-decoration: none;
 
-  background-color: #63d1bb;
+  background-color: $blue;
 }
 .promo__item-two {
   box-sizing: border-box;
   width: 320px;
   height: 103px;
 
-  @include font-base-2();
-  color: #ffffff;
+  font-family: $default-font;
+  font-weight: 700;
+  color: $white;
   text-decoration: none;
 
   background-color: #56c3b2;

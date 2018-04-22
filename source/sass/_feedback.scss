@@ -6,10 +6,11 @@
   margin: 0 auto;
 
 
-  @include font-base-2();
-  color: $color-1;
+  font-family: $default-font;
+  font-weight: 700;
+  color: $black;
 
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .feedback__container {
@@ -42,10 +43,11 @@
   padding: 0;
   margin: 0;
 
-  @include font-base-1();
+  font-family: $default-font;
+  font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  color: $color-2;
+  color: $gray;
 }
 
 .feedback__cite {
@@ -56,21 +58,23 @@
 .feedback__author {
   padding-top: 40px;
 
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-style: normal;
   font-size: 17px;
   line-height: 24px;
-  color: $color-1;
+  color: $black;
 }
 
 .feedbak__email {
   padding-top: 17px;
 
-  @include font-base-1();
+  font-family: $default-font;
+  font-weight: 400;
   font-style: normal;
   font-size: 17px;
   line-height: 30px;
-  color: $color-2;
+  color: $gray;
 }
 
 .feedback__toggle {
@@ -81,7 +85,7 @@
   margin-top: 38px;
 
   line-height: 0;
-  border: 1px solid #ececec;
+  border: 1px solid $gray--light;
 }
 
 .feedback__add-link {
@@ -92,13 +96,14 @@
   margin-top: 38px;
   margin-bottom: 50px;
 
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  color: #444444;
+  color: $gray;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 
-  border: 2px solid #444444;
+  border: 2px solid $gray;
 }

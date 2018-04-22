@@ -2,7 +2,7 @@
   width: 320px;
 
   line-height: 0;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .navigation__list {
@@ -32,12 +32,13 @@
   padding-top: 30px;
   padding-left: 77px;
 
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: $color-1;
+  color: $black;
   text-decoration: none;
 
-  border: 1px solid #ececec;
+  border: 1px solid $gray--light;
   border-top: none;
 }

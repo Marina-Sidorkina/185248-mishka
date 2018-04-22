@@ -6,13 +6,8 @@
   padding: 0;
   margin: 0 auto;
 
-  @include font-base-2();
-  font-size: 17px;
-  line-height: 24px;
-  color: $color-1;
-
   background-color: #f1f1f1;
-  border-top: 1px solid #ececec;
+  border-top: 1px solid $gray--light;
 }
 
 .catalog-header__container {
@@ -32,6 +27,12 @@
   box-sizing: border-box;
   width: 240px;
   height: 30px;
+
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: $black;
 
   text-align: center;
 }

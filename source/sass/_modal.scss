@@ -7,10 +7,11 @@
   margin: 0 auto;
 
 
-  @include font-base-1();
-  color: $color-2;
+  font-family: $default-font;
+  font-weight: 400;
+  color: $gray;
 
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .modal__container {
@@ -30,10 +31,11 @@
   height: 50px;
   margin: 0 auto;
 
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: $color-2;
+  color: $gray;
 
   text-transform: uppercase;
   text-align: center;
@@ -49,47 +51,13 @@
   margin: 0 auto;
   margin-top: 25px;
 
-  @include font-base-1();
+  font-family: $default-font;
+  font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  color: $color-2;
+  color: $gray;
 
   text-align: center;
-}
-
-.size {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-  width: 260px;
-  height: 52px;
-  margin-top: 27px;
-}
-
-.size__radio {
-  display: none;
-}
-
-.size__1,
-.size__2,
-.size__3 {
-  display: block;
-  box-sizing: border-box;
-  width: 82px;
-  height: 52px;
-  padding-top: 17px;
-
-  @include font-base-2();
-  font-size: 17px;
-  line-height: 17px;
-  color: $color-2;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  border: 2px solid #ececec;
-  cursor: pointer;
 }
 
 .modal__button {
@@ -98,15 +66,16 @@
   height: 52px;
   margin-top: 38px;
 
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 17px;
   line-height: 17px;
-  color: #ffffff;
+  color: $white;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 
-  background-color: #63d1bb;
+  background-color: $blue;
   border: none;
   cursor: pointer;
 }

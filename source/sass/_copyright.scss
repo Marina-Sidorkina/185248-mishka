@@ -1,0 +1,16 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 79px;
+}
+
+.copyright__text {
+  margin-right: 30px;
+}
+
+.copyright__svg {
+  fill: $blue;
+}

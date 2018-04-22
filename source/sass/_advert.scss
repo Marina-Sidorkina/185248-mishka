@@ -6,11 +6,11 @@
   padding-bottom: 43px;
   margin: 0 auto;
 
+  font-family: $default-font;
+  font-weight: 400;
+  color: $black;
 
-  @include font-base-1();
-  color: $color-1;
-
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .advert__container {
@@ -28,7 +28,9 @@
   box-sizing: border-box;
   margin: 0;
   margin-top: 30px;
-  @include font-base-2();
+
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
 }
@@ -39,10 +41,11 @@
   margin: 0;
   margin-top: 10px;
 
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  color: #63d1bb;
+  color: $blue;
   text-transform: uppercase;;
 }
 
@@ -50,26 +53,15 @@
   margin: 0;
   margin-top: 30px;
 
-  @include font-base-1();
+  font-family: $default-font;
+  font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #444444;
+  color: $gray;
 }
 
 .advert__specification {
   margin: 0;
-}
-
-.product-details {
-  box-sizing: border-box;
-  width: 260px;
-  margin: 0;
-  margin-top: 30px;
-
-  @include font-base-1();
-  font-size: 15px;
-  line-height: 24px;
-  color: #444444;
 }
 
 .advert__add {
@@ -83,10 +75,11 @@
   height: 73px;
   padding-top: 30px;
 
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 15px;
   line-height: 24px;
-  color: #444444;
+  color: $gray;
   text-align: center;
 }
 
@@ -96,13 +89,14 @@
   height: 52px;
   padding-top: 15px;
 
-  @include font-base-2();
+  font-family: $default-font;
+  font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  color: #444444;
+  color: $gray;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 
-  border: 2px solid #444444;
+  border: 2px solid $gray;
 }

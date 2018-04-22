@@ -1,5 +1,9 @@
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic');
 @import "variables";
 @import "mixin";
+@import "visually-hidden";
+
 @import "page-body";
 @import "page-header";
 @import "extra";
@@ -17,27 +21,22 @@
 @import "copyright";
 
 @import "modal";
+@import "size";
 
 @import "catalog";
 @import "catalog-header";
 @import "product-list";
 @import "product-item";
+@import "product-details";
 @import "production";
 @import "video-block";
 
+@import "forms";
 @import "forms-header";
 @import "forms-description";
-
-@import "addit";
-@import "color";
-
-@import "email";
-@import "forms";
-@import "name";
-@import "product-details";
-@import "second-name";
-@import "size";
-@import "surname";
-@import "tel";
 @import "type";
+@import "color";
 @import "user-form";
+@import "tel";
+@import "email";
+@import "addit";
