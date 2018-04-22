@@ -2,9 +2,9 @@
 <html lang=ru>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   </head>
   <body class="page-body">
 
@@ -204,12 +204,12 @@
         <form class="modal__form">
           <p class="modal__choice">Выберите размер:</p>
           <div class="modal__list size">
-            <input class="size__radio" type="radio" name="size" id="siaze-1" value="size-1">
-            <label class="size__1" for="siaze-1">S</label>
-            <input class="size__radio" type="radio" name="size" id="size-2" value="size-2">
-            <label class="size__2" for="size-2">M</label>
-            <input class="size__radio" type="radio" name="size" id="siaze-3" value="size-3">
-            <label class="size__3" for="siaze-3">N</label>
+            <input class="size__radio" type="radio" name="size" id="size-small" value="size-small">
+            <label class="size__button--small" for="size-small">S</label>
+            <input class="size__radio" type="radio" name="size" id="size-medium" value="size-medium">
+            <label class="size__button--medium" for="size-medium">M</label>
+            <input class="size__radio" type="radio" name="size" id="siaze-large" value="size-large">
+            <label class="size__button--large" for="siaze-large">L</label>
           </div>
           <button class="modal__button" type="submit" formmethod="get" formaction="https://echo.htmlacademy.ru" name="button">Добавить</button>
         </form>
