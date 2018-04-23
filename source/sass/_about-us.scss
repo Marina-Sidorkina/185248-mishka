@@ -47,74 +47,34 @@
   color: $black;
 }
 
-.about-us__detail--eco {
+.about-us__detail {
   display: flex;
-  flex-direction: column;
 
   box-sizing: border-box;
-  height: 124px
+  height: 121px;
 }
 
-.about-us__text--eco {
-  width: 175px;
+.about-us__detail--eco {
+  padding-right: 75px;
+  background-color: green;
 }
 
 .about-us__detail--style {
-  display: flex;
-  flex-direction: column;
-
-  box-sizing: border-box;
-  height: 128px
-}
-
-.about-us__text--style {
-  width: 200px;
+  padding-right: 60px;
 }
 
 .about-us__detail--likes {
-  display: flex;
-  flex-direction: column;
-
-  box-sizing: border-box;
-  height: 120px
-}
-
-.about-us__text--likes {
-  width: 200px;
+  padding-right: 60px;
 }
 
 .about-us__detail--handmade {
-  display: flex;
-  flex-direction: column;
-
-  box-sizing: border-box;
-  height: 124px
-}
-
-.about-us__text--handmade {
-  width: 215px;
+  padding-right: 40px;
 }
 
 .about-us__detail--support {
-  display: flex;
-  flex-direction: column;
-
-  box-sizing: border-box;
-  height: 121px
-}
-
-.about-us__text--support {
-  width: 250px;
+  padding-right: 10px;
 }
 
 .about-us__detail--gift {
-  display: flex;
-  flex-direction: column;
-
-  box-sizing: border-box;
-  height: 120px;
-}
-
-.about-us__text-gift {
-  width: 200px;
+  padding-right: 40px;
 }
