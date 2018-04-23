@@ -1,0 +1,35 @@
+.tel {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+}
+
+.tel__container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 260px;
+  height: 107px;
+  margin: 0 auto;
+}
+
+.tel__legend {
+  padding: 0;
+  margin: 0;
+
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: $blue;
+
+  text-transform: uppercase;
+}
+
+.tel__input {
+  box-sizing: border-box;
+  height: 52px;
+
+  border: none;
+  border-bottom: 2px solid $gray;
+}

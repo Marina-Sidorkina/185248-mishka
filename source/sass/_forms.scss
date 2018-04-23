@@ -1,0 +1,61 @@
+.forms__list {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.forms__send {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+
+  background-color: $white;
+}
+
+.forms__container-2 {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.forms__note {
+  box-sizing: border-box;
+  height: 63px;
+  padding: 0;
+  margin: 0;
+  padding-top: 19px;
+
+  font-family: $default-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $gray;
+}
+
+.forms__button {
+  box-sizing: border-box;
+  width: 260px;
+  height: 52px;
+  margin-bottom: 56px;
+
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: $gray;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 2px solid $gray;
+  background-color: $white;
+}

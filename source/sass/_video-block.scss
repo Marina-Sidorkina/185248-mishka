@@ -1,0 +1,23 @@
+.video-block {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+.video-block__picture {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+.video-block__button {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 37px;
+  left: 80px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

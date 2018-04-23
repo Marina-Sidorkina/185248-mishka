@@ -1,0 +1,34 @@
+
+.size {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 260px;
+  height: 52px;
+  margin-top: 27px;
+}
+
+.size__radio {
+  display: none;
+}
+
+.size__button {
+  display: block;
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  padding-top: 17px;
+
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: $gray;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 2px solid $gray--light;
+  cursor: pointer;
+}

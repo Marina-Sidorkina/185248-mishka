@@ -1,0 +1,66 @@
+.type {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+
+  background-color: $white;
+}
+
+.type__container {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.type__legend {
+  padding: 0;
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 26px;
+
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: $blue;
+
+  text-transform: uppercase;
+}
+
+.type__list {
+  padding:  0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.type__radio {
+  display: none;
+}
+
+.type__option {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+  padding-left: 64px;
+  padding-top: 10px;
+}
+
+.type__descr {
+  padding: 0;
+  margin: 0;
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+}

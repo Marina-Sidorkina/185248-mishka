@@ -1,0 +1,102 @@
+.advert {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0;
+  padding-bottom: 43px;
+  margin: 0 auto;
+
+  font-family: $default-font;
+  font-weight: 400;
+  color: $black;
+
+  background-color: $white;
+}
+
+.advert__container {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advert__header {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 30px;
+
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.advert__category {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 10px;
+
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $blue;
+  text-transform: uppercase;;
+}
+
+.advert__description {
+  margin: 0;
+  margin-top: 30px;
+
+  font-family: $default-font;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $gray;
+}
+
+.advert__specification {
+  margin: 0;
+}
+
+.advert__add {
+  display: flex;
+  flex-direction: column;
+}
+
+.advert__price {
+  box-sizing: border-box;
+  width: 260px;
+  height: 73px;
+  padding-top: 30px;
+
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: $gray;
+  text-align: center;
+}
+
+.advert__order {
+  box-sizing: border-box;
+  width: 260px;
+  height: 52px;
+  padding-top: 15px;
+
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $gray;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 2px solid $gray;
+}

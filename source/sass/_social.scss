@@ -1,0 +1,14 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  height: 81px;
+  padding-left: 58px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__link {
+  margin-right: 40px;
+}

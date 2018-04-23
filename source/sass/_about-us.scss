@@ -1,0 +1,80 @@
+.about-us {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+
+  font-family: $default-font;
+  font-weight: 700;
+  color: $black;
+
+  background-color: $white;
+}
+
+.about-us__container {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us__title {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  height: 89px;
+
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+}
+
+.about-us__list {
+  display: flex;
+  flex-direction:  column;
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+
+  font-size: 17px;
+  line-height: 20px;
+  color: $black;
+}
+
+.about-us__detail {
+  display: flex;
+
+  box-sizing: border-box;
+  height: 121px;
+}
+
+.about-us__detail--eco {
+  padding-right: 75px;
+  background-color: green;
+}
+
+.about-us__detail--style {
+  padding-right: 60px;
+}
+
+.about-us__detail--likes {
+  padding-right: 60px;
+}
+
+.about-us__detail--handmade {
+  padding-right: 40px;
+}
+
+.about-us__detail--support {
+  padding-right: 10px;
+}
+
+.about-us__detail--gift {
+  padding-right: 40px;
+}
