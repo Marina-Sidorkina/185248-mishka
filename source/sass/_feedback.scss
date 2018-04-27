@@ -67,6 +67,7 @@
 }
 
 .feedbak__email {
+  position: relative;
   padding-top: 17px;
 
   font-family: $default-font;
@@ -78,14 +79,45 @@
 }
 
 .feedback__toggle {
+  display: flex;
   box-sizing: border-box;
   width: 260px;
   height: 52px;
-  padding-top: 15px;
   margin-top: 38px;
 
   line-height: 0;
   border: 1px solid $gray--light;
+}
+
+.feedback__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 130px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background-color: $white;
+  cursor: pointer;
+  outline: none;
+}
+
+.feedback__svg {
+  width: 50px;
+  height: 26px;
+
+  fill: $black;
+}
+
+.feedback__arrow:hover .feedback__svg {
+  fill: #666666;
+}
+
+.feedback__arrow:active .feedback__svg {
+  fill: #b2b2b2;
 }
 
 .feedback__add-link {
@@ -106,4 +138,15 @@
   text-decoration: none;
 
   border: 2px solid $gray;
+}
+
+.feedback__add-link:hover {
+  color: $white;
+  background-color: $gray;
+}
+
+.feedback__add-link:active {
+  color: #8d8d8d;
+  background-color: $gray;
+  opacity: 0.9;
 }

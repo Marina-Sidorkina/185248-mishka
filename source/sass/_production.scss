@@ -15,8 +15,17 @@
   width: 260px;
   padding: 0;
   margin: 0 auto;
+  margin-bottom: 58px;
 
   border: 1px solid $gray--light;
+}
+
+.production__container:hover {
+  box-shadow: 0 5px 9px 0 #e8e8e8;
+}
+
+.production__container:active {
+  box-shadow: 0 3px 3px 0 #e8e8e8;
 }
 
 .production__header {
@@ -73,4 +82,15 @@
   text-decoration: none;
   border: 2px solid $gray;;
   cursor: pointer;
+}
+
+.production__link:hover {
+  color: $white;
+  background-color: $gray;
+}
+
+.production__link:active {
+  color: #8d8d8d;
+  background-color: $gray;
+  opacity: 0.9;
 }

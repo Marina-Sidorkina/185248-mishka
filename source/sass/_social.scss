@@ -12,3 +12,16 @@
 .social__link {
   margin-right: 40px;
 }
+
+.social__svg {
+  fill: "#231F20";
+}
+
+.social__link:hover .social__svg {
+  fill: $blue;
+}
+
+.social__link:active .social__svg {
+  fill: $blue;
+  opacity: 0.2;
+}

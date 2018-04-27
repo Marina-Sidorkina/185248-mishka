@@ -19,6 +19,7 @@
 }
 
 .color__legend {
+  position: relative;
   padding: 0;
   margin: 0;
   margin-top: 11px;
@@ -31,6 +32,17 @@
   color: $blue;
 
   text-transform: uppercase;
+}
+
+.color__legend::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 198px;
+  height: 1px;
+  top: 50%;
+  right: 0;
+  background-color: #62d1ba;
 }
 
 .color__list {
@@ -51,16 +63,65 @@
   height: 61px;
   padding: 0;
   margin: 0;
-  padding-left: 64px;
-  padding-top: 10px;
 }
 
-.color__descr {
-  padding: 0;
-  margin: 0;
+.color__check + .color__descr {
+  display: block;
+  position: relative;
+  padding-left: 64px;
+  padding-top: 10px;
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: $black;
+
+  cursor: pointer;
+}
+
+.color__check + .color__descr::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+
+  background-color: $white;
+  border: 1px solid $gray;
+}
+
+.color__check + .color__descr::after {
+  content: "";
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  width: 30px;
+  height: 23px;
+  left: 5px;
+  top: 7px;
+
+  background: url("../img/icon-tick.svg") no-repeat;
+}
+
+.color__check:checked + .color__descr::after {
+  display: block;
+}
+
+.color__check:hover + .color__descr::before {
+  border: 1px solid #62d1ba;
+}
+
+.color__check:active + .color__descr::before {
+  border: 1px solid #c7c7c7;
+}
+
+.color__check:checked:hover + .color__descr::before {
+  border: 1px solid #62d1ba;
+}
+
+.color__check:checked:active + .color__descr::before {
+  border: 1px solid #c7c7c7;
 }

@@ -100,3 +100,14 @@
 
   border: 2px solid $gray;
 }
+
+.advert__order:hover {
+  color: $white;
+  background-color: $gray;
+}
+
+.advert__order:active {
+  color: #8d8d8d;
+  background-color: $gray;
+  opacity: 0.9;
+}

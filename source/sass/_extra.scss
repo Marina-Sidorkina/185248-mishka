@@ -18,6 +18,8 @@
   align-items: center;
   box-sizing: border-box;
 
+  margin: 0;
+  padding: 0;
   width: 260px;
   height: 79px;
   margin-left: auto;
@@ -26,6 +28,14 @@
 
 .extra__link {
   margin-right: 68px;
+}
+
+.extra__link:hover {
+  opacity: 0.5;
+}
+
+.extra__link:active {
+  opacity: 0.2;
 }
 
 .extra__dropdown {
@@ -38,4 +48,31 @@
 .extra__button {
   width: 21px;
   height: 14px;
+
+  outline: none;
+}
+
+.extra__button--closed {
+  width: 21px;
+  height: 15px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+	background-color: red;
+  background: url("../img/icon-menu-open.svg") no-repeat;
+  background-position: center;
+}
+
+.extra__button--opened {
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background: url("../img/icon-menu-close.svg") no-repeat;
+  background-position: center;
+}
+
+.extra__button--opened .page-body {
+  margin-top: 395px;
 }

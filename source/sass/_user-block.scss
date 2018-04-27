@@ -1,6 +1,6 @@
-.navigation {
+.user-block {
   display: none;
-  order: -2;
+  order: -1;
   width: 320px;
   padding: 0;
   margin: 0;
@@ -9,11 +9,11 @@
   background-color: $white;
 }
 
-.navigation--show {
+.user-block--show {
   display: block;
 }
 
-.navigation__list {
+.user-block__list {
   display: flex;
   flex-direction:  row;
   flex-wrap: wrap;
@@ -23,7 +23,7 @@
   margin: 0;
 }
 
-.navigation__item  {
+.user-block__item  {
   box-sizing: border-box;
   width: 320px;
   height: 79px;
@@ -31,8 +31,9 @@
   margin: 0;
 }
 
-.navigation__link {
+.user-block__link {
   display: block;
+  position: relative;
   box-sizing: border-box;
   width: 320px;
   height: 79px;
@@ -52,10 +53,26 @@
   border-top: none;
 }
 
-.navigation__link:hover {
+.user-block__svg {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  fill: #d3d2d2;
+}
+
+.user-block__link:hover {
   opacity: 0.5;
 }
 
-.navigation__link:active {
+.user-block__link:hover .user-block__svg {
+  fill: $blue;
+}
+
+.user-block__link:active {
+  opacity: 0.2;
+}
+
+.user-block__link:active .user-block__svg {
+  fill: $blue;
   opacity: 0.2;
 }

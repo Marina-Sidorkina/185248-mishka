@@ -21,6 +21,14 @@
   background-color: $white;
 }
 
+.product-item__container:hover {
+  box-shadow: 0 5px 9px 0 #e8e8e8;
+}
+
+.product-item__container:active {
+  box-shadow: 0 3px 3px 0 #e8e8e8;
+}
+
 .product-item__link {
   box-sizing: border-box;
   margin: 0;
@@ -55,6 +63,14 @@
   color: $black;
 
   text-decoration: none;
+}
+
+.product-item__title:hover {
+  opacity: 0.5;
+}
+
+.product-item__title:active {
+  opacity: 0.2;
 }
 
 .product-item__property {
@@ -102,4 +118,13 @@
 
 .product-item__svg {
   fill: #cccccc;
+}
+
+.product-item__svg:hover {
+  fill: $blue;
+}
+
+.product-item__svg:active {
+  fill: $blue;
+  opacity: 0.2;
 }

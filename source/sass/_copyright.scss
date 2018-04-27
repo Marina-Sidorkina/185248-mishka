@@ -7,10 +7,35 @@
   height: 79px;
 }
 
+.copyright__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 34px;
+
+  text-decoration: none;
+}
+
 .copyright__text {
   margin-right: 30px;
+
+  font-family: $default-font;
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $black;
 }
 
 .copyright__svg {
   fill: $blue;
+}
+
+.copyright__text:active {
+  opacity: 0.2;
+}
+
+.copyright__text:active .copyright__svg {
+  opacity: 0.2;
 }

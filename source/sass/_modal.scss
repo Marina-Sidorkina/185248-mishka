@@ -1,5 +1,5 @@
 .modal {
-  display: block;
+  display: none;
   box-sizing: border-box;
   width: 320px;
   height:340px;
@@ -12,6 +12,25 @@
   color: $gray;
 
   background-color: $white;
+  box-shadow: 0 6px 6px 0 #c6c6c6;
+}
+
+@keyframes show {
+  0% {transform: translateY(-2000px);}
+  70% {transform: translateY(10px);}
+  0% {transform: translateY(-10px);}
+  0% {transform: translateY(0);}
+}
+
+.modal--show {
+  position: fixed;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-top: -170px;
+  margin-left: -160px;
+  animation-name: show;
+  animation-duration: 1s;
 }
 
 .modal__container {
@@ -78,4 +97,14 @@
   background-color: $blue;
   border: none;
   cursor: pointer;
+}
+
+/*В стайлгайде нет состояний для этой кнопки. Сделала на своё усмотрение,
+чтобы хоть как-то интерактивность подчеркнуть. Если так нельзя - уберу*/
+.modal__button:hover {
+  opacity: 0.9;
+}
+
+.modal__button:active {
+  opacity: 0.5;
 }

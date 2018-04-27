@@ -58,4 +58,17 @@
 
   border: 2px solid $gray;
   background-color: $white;
+  cursor: pointer;
+  outline: none;
+}
+
+.forms__button:hover {
+  color: $white;
+  background-color: $gray;
+}
+
+.forms__button:active {
+  color: #8d8d8d;
+  background-color: $gray;
+  opacity: 0.9;
 }
