@@ -28,3 +28,27 @@
   margin: 0;
   padding: 0;
 }
+
+
+
+@media (min-width: $tablet-width) {
+  .product-list {
+    width: 100%;
+  }
+
+  .product-list__container {
+    width: $tablet-content-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .product-list__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: $desktop-content-width;
+  }
+}

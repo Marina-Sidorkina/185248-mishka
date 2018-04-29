@@ -78,3 +78,68 @@
 .tel__input:focus + .tel__svg {
   fill: #62d1ba;
 }
+
+
+@media (min-width: $tablet-width) {
+  .tel {
+    width: 100%;
+    padding-top: 26px;
+    background-color: #f1f1f1;
+  }
+
+  .tel__container {
+    display: flex;
+    flex-direction: row;
+    width: $tablet-content-width;
+    height: 77px;
+  }
+
+  .tel__legend {
+    box-sizing: border-box;
+    width: 167px;
+    height: 77px;
+    margin: 0;
+    padding: 0;
+    padding-top: 37px;
+  }
+
+  .tel__legend::after {
+    display: none;
+  }
+
+  .tel__input {
+    width: 501px;
+    height: 77px;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-left: 17px;
+
+    font-size: 19px;
+    line-height: 19px;
+    background-color: #f1f1f1;
+  }
+
+  .tel__svg {
+    right: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .tel__container {
+    width: $desktop-content-width;
+  }
+
+  .tel__legend {
+    width: 175px;
+  }
+
+  .tel__input {
+    width: 700px;
+  }
+
+  .tel__svg {
+    right: 175px;
+  }
+}
