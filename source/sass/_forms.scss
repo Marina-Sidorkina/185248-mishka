@@ -67,6 +67,10 @@
   background-color: $gray;
 }
 
+
+/*Светлый тон фона кнопки задан через opacity,
+так как в фотошопе он определяется как №444444 ($gray),
+то есть как и у ховера, но визуально явно светлей*/
 .forms__button:active {
   color: #8d8d8d;
   background-color: $gray;

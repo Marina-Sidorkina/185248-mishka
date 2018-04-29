@@ -66,11 +66,11 @@
 }
 
 .product-item__title:hover {
-  opacity: 0.5;
+  color: #8d8d8d;
 }
 
 .product-item__title:active {
-  opacity: 0.2;
+  color: #cacaca;
 }
 
 .product-item__property {
@@ -125,6 +125,5 @@
 }
 
 .product-item__svg:active {
-  fill: $blue;
-  opacity: 0.2;
+  fill: #d0f1ea;
 }

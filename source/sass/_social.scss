@@ -18,10 +18,22 @@
 }
 
 .social__link:hover .social__svg {
-  fill: $blue;
+  fill: #46c1ae;
 }
 
 .social__link:active .social__svg {
-  fill: $blue;
-  opacity: 0.2;
+  fill: #bde3dd;
+}
+
+
+@media (min-width:$tablet-width) {
+  .social {
+    display: flex;
+    justify-content: space-between;
+    width: 141px;
+    margin: 0;
+    padding: 0;
+
+    border: none;
+  }
 }

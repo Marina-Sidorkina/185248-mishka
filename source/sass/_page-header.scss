@@ -32,3 +32,50 @@
   line-height: 24px;
   color: $black;
 }
+
+.page-header__delivery {
+  display: none;
+  order: 4;
+  box-sizing: border-box;
+  width: 232px;
+  height: 79px;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+
+  font-family: $default-font;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $gray;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 100%;
+  }
+
+  .page-header__container {
+    width: $tablet-content-width;
+  }
+
+  .page-header__delivery {
+    display: block;
+    order: 4;
+    box-sizing: border-box;
+    width: 231px;
+    height: 65px;
+    padding-top: 20px;
+    margin-left: auto;;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 100%;
+  }
+
+  .page-header__container {
+    width: $desktop-content-width;
+  }
+}

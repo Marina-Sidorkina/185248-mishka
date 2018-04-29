@@ -33,9 +33,17 @@
 }
 
 .copyright__text:active {
-  opacity: 0.2;
+  fill: #46c1ae;
 }
 
 .copyright__text:active .copyright__svg {
-  opacity: 0.2;
+  fill: #bde3dd;
+}
+
+
+
+@media (min-width:$tablet-width) {
+  .copyright {
+    width: 190px;
+  }
 }

@@ -145,8 +145,104 @@
   background-color: $gray;
 }
 
+/*Светлый тон фона кнопки задан через opacity,
+так как в фотошопе он определяется как №444444 ($gray),
+то есть как и у ховера, но визуально явно светлей*/
 .feedback__add-link:active {
   color: #8d8d8d;
   background-color: $gray;
   opacity: 0.9;
+}
+
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: 100%;
+    padding-bottom: 85px;
+    margin-bottom: 45px;
+  }
+
+  .feedback__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: $tablet-content-width;
+  }
+
+  .feedback__title {
+    width: 493px;
+    min-height: 175px;
+    padding-top: 79px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .feedback__add-link {
+    order: 1;
+    width: 175px;
+    margin-top: 79px;
+  }
+
+  .feedback__details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 2;
+    width: 100%;
+  }
+
+  .feedback__text {
+    width: 100%;
+    min-height: 135px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .feedback__cite {
+   width: 493px;
+   min-height: 145px;
+  }
+
+  .feedback__author {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .feedback__email {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .feedback__toggle {
+    width: 175px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding-bottom: 90px;
+    margin-bottom: 71px;
+  }
+
+  .feedback__container {
+    width: $desktop-content-width;
+    padding-left: 175px;
+  }
+
+  .feedback__title {
+    width: 700px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .feedback__cite {
+    width: 700px;
+  }
+
+  .feedback__author {
+    font-size: 17px;
+    line-height: 24px;
+  }
 }

@@ -106,8 +106,179 @@
   background-color: $gray;
 }
 
+/*Светлый тон фона кнопки задан через opacity,
+так как в фотошопе он определяется как №444444 ($gray),
+то есть как и у ховера, но визуально явно светлей*/
 .advert__order:active {
   color: #8d8d8d;
   background-color: $gray;
   opacity: 0.9;
+}
+
+
+@media (min-width: $tablet-width) {
+  .advert {
+    width: 100%
+  }
+
+  .advert__container {
+    display: flex;
+    flex-direction: column;
+    width: $tablet-content-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advert__wrapper {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: $tablet-content-width;
+    min-height: 155px;
+  }
+
+  .advert__header {
+    width: 568px;
+    min-height: 155px;
+    padding: 0;
+    margin: 0;
+    padding-top: 45px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .advert__category {
+    min-height: 155px;
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    padding-top: 55px;
+
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .advert__description {
+    order: 2;
+    width: 50%;
+    height: 120px;
+    margin-top: -404px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .advert__specification {
+    order: 3;
+    width: 50%;
+    height: 120px;
+    margin: 0;
+  }
+
+  .advert__add {
+    justify-content: flex-end;
+    order: 4;
+    width: 50%;
+    height: 150px;
+  }
+
+  .advert__price {
+    width: 100%;
+    height: 98px;
+    padding-top: 55px;
+
+    font-size: 20px;
+  }
+
+  .advert__order {
+    width: 291px;
+  }
+
+  .advert__illustration {
+    order: 1;
+    margin-left: auto;
+    width: 333px;
+    height: 404px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advert {
+    padding-bottom: 70px;
+  }
+
+  .advert__container {
+    width: $desktop-content-width;
+  }
+
+  .advert__wrapper {
+    z-index: 10;
+    width: $desktop-content-width;
+    min-height: 165px;
+  }
+
+  .advert__header {
+    width: 875px;
+    min-height: 165px;
+    padding-top: 45px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .advert__category {
+    order: -1;
+    min-height: 155px;
+    width: 175px;
+    padding-top: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    text-align: center;
+  }
+
+  .advert__description {
+    order: 2;
+    width: 291px;
+    min-height: 120px;
+    margin-top: -471px;
+    margin-left: 175px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .advert__specification {
+    width: 291px;
+    height: 120px;
+    margin: 0;
+    margin-left: 175px;
+  }
+
+  .advert__add {
+    width: 291px;
+    height: 217px;
+    margin-left: 175px;
+  }
+
+  .advert__price {
+    width: 291px;
+    height: 165px;
+    padding-top: 106px;
+
+    font-size: 20px;
+  }
+
+  .advert__order {
+    width: 291px;
+  }
+
+  .advert__illustration {
+    index: -10;
+    width: 525px;
+    height: 636px;
+    margin-top: -165px;
+  }
 }
