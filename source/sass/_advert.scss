@@ -62,6 +62,7 @@
 
 .advert__specification {
   margin: 0;
+  margin-bottom: 28px;
 }
 
 .advert__add {
@@ -72,7 +73,7 @@
 .advert__price {
   box-sizing: border-box;
   width: 260px;
-  height: 73px;
+  min-height: 73px;
   padding-top: 30px;
 
   font-family: $default-font;
@@ -86,7 +87,7 @@
 .advert__order {
   box-sizing: border-box;
   width: 260px;
-  height: 52px;
+  min-height: 52px;
   padding-top: 15px;
 
   font-family: $default-font;
@@ -181,7 +182,7 @@
     justify-content: flex-end;
     order: 4;
     width: 50%;
-    height: 150px;
+    height: 164px;
   }
 
   .advert__price {
@@ -207,6 +208,7 @@
 @media (min-width: $desktop-width) {
   .advert {
     padding-bottom: 70px;
+    margin-top: 71px;
   }
 
   .advert__container {
@@ -259,7 +261,7 @@
 
   .advert__add {
     width: 291px;
-    height: 217px;
+    min-height: 222px;
     margin-left: 175px;
   }
 
@@ -279,6 +281,6 @@
     index: -10;
     width: 525px;
     height: 636px;
-    margin-top: -165px;
+    margin-top: -164px;
   }
 }

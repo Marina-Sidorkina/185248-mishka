@@ -165,7 +165,13 @@
   .feedback__container {
     flex-direction: row;
     flex-wrap: wrap;
-    width: $tablet-content-width;
+    width: $tablet-width;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
   }
 
   .feedback__title {
@@ -227,6 +233,7 @@
 
   .feedback__container {
     width: $desktop-content-width;
+    padding: 0;
     padding-left: 175px;
   }
 

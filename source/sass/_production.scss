@@ -40,12 +40,25 @@
 }
 
 .production__title {
+  position: relative;
   width: 130px;
+  margin-left: 91px;
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: $black;
+}
+
+.production__title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  top: 7px;
+  left: -67px;
+  background-image: url("../img/icon-video.svg");
 }
 
 .production__description {
@@ -136,6 +149,7 @@
     width: 586px;
     padding-left: 67px;
     padding-top: 40px;
+    margin: 0;
   }
 
   .production__title::before {

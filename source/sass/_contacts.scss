@@ -1,9 +1,8 @@
 .contacts {
   display: block;
-  box-sizing: border-box;
-  width: 320px;
+  width: 100%;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 
 
   font-family: $default-font;
@@ -18,6 +17,18 @@
   flex-direction: column;
 
   box-sizing: border-box;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__container--main {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__container--link {
   width: 260px;
   margin-left: auto;
   margin-right: auto;
@@ -84,10 +95,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   margin-top: 45px;
 
   line-height: 0;
+  background-color: #dfdfdf;
 }
 
 .contacts__write-us-link {
@@ -132,6 +144,8 @@
 
   .contacts__container {
     width: $tablet-content-width;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contacts__map {
@@ -217,6 +231,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    margin-bottom: 105px;
+  }
+
   .contacts__container--general {
     display: flex;
     flex-direction: column;
