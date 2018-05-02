@@ -29,3 +29,45 @@
   line-height: 24px;
   color: $gray;
 }
+
+
+@media (min-width: $tablet-width) {
+  .forms-description {
+    width: 100%;
+  }
+
+  .forms-description__container {
+    width: $tablet-content-width;
+    min-height: 190px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .forms-description__text {
+    box-sizing: border-box;
+    width: $tablet-content-width;
+    min-height: 190px;
+    padding: 0;
+    margin: 0;
+    padding-top: 80px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .forms-description__container {
+    width: $desktop-content-width;
+    min-height: 238px;
+  }
+
+  .forms-description__text {
+    width: 700px;
+     min-height: 238px;
+     padding-top: 127px;
+     margin-left: 175px;
+   }
+}

@@ -1,0 +1,149 @@
+.user-block {
+  display: none;
+  order: -1;
+  width: 320px;
+  padding: 0;
+  margin: 0;
+
+  line-height: 0;
+  background-color: $white;
+}
+
+.user-block--show {
+  display: block;
+}
+
+.user-block__list {
+  display: flex;
+  flex-direction:  row;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-block__item  {
+  box-sizing: border-box;
+  width: 320px;
+  height: 79px;
+  padding: 0;
+  margin: 0;
+}
+
+.user-block__link {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  height: 79px;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-left: 77px;
+
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+  text-decoration: none;
+
+  border: 1px solid $gray--light;
+  border-top: none;
+}
+
+.user-block__svg {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  fill: #d3d2d2;
+}
+
+.user-block__link:hover {
+  color: #8d8d8d;
+}
+
+.user-block__link:hover .user-block__svg {
+  fill: $blue;
+}
+
+.user-block__link:active {
+  color: #cacaca;
+}
+
+.user-block__link:active .user-block__svg {
+  fill: #d0f1ea;
+}
+
+
+@media (min-width: $tablet-width) {
+  .user-block {
+    display: block;
+    order: 1;
+    width: 348px;
+    height: 89px;
+  }
+
+  .user-block__list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .user-block__link--search {
+    width: 84px;
+    height: 89px;
+    padding-top: 35px;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .user-block__link--cart {
+    width: 264px;
+    height: 89px;
+    padding-top: 35px;
+    padding-left: 85px;
+    border: none;
+  }
+
+  .user-block__svg {
+    left: 32px;
+    top: 37px;
+  }
+
+  .user-block__hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-block {
+    display: block;
+    order: 2;
+    width: 350px;
+    height: 89px;
+  }
+
+  .user-block__list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .user-block__link--search {
+    width: 84px;
+    height: 89px;
+    padding-top: 35px;
+  }
+
+  .user-block__link--cart {
+    width: 266px;
+    height: 89px;
+    padding-top: 35px;
+    padding-left: 85px;
+  }
+
+  .user-block__svg {
+    left: 32px;
+    top: 37px;
+  }
+}

@@ -58,4 +58,76 @@
 
   border: 2px solid $gray;
   background-color: $white;
+  cursor: pointer;
+  outline: none;
+}
+
+.forms__button:hover {
+  color: $white;
+  background-color: $gray;
+}
+
+
+/*Светлый тон фона кнопки задан через opacity,
+так как в фотошопе он определяется как №444444 ($gray),
+то есть как и у ховера, но визуально явно светлей*/
+.forms__button:active {
+  color: #8d8d8d;
+  background-color: $gray;
+  opacity: 0.9;
+}
+
+@media (min-width: $tablet-width) {
+  .forms__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .forms__send {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .forms__container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: $tablet-content-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .forms__note {
+    order: 1;
+    width: 302px;
+    height: 52px;
+    margin: 0;
+    padding: 0;
+    padding-top: 9px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .forms__button {
+    width: 231px;
+    height: 52px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .forms__container-2 {
+    width: $desktop-content-width;
+  }
+
+  .forms__note {
+    margin-right: 175px;
+  }
+
+  .forms__button {
+    margin-left: 175px;
+  }
 }

@@ -12,3 +12,28 @@
 .social__link {
   margin-right: 40px;
 }
+
+.social__svg {
+  fill: "#231F20";
+}
+
+.social__link:hover .social__svg {
+  fill: #46c1ae;
+}
+
+.social__link:active .social__svg {
+  fill: #bde3dd;
+}
+
+
+@media (min-width:$tablet-width) {
+  .social {
+    display: flex;
+    justify-content: space-between;
+    width: 141px;
+    margin: 0;
+    padding: 0;
+
+    border: none;
+  }
+}

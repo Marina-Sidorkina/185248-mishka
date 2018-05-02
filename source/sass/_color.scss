@@ -19,6 +19,7 @@
 }
 
 .color__legend {
+  position: relative;
   padding: 0;
   margin: 0;
   margin-top: 11px;
@@ -31,6 +32,17 @@
   color: $blue;
 
   text-transform: uppercase;
+}
+
+.color__legend::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 198px;
+  height: 1px;
+  top: 50%;
+  right: 0;
+  background-color: #62d1ba;
 }
 
 .color__list {
@@ -51,16 +63,176 @@
   height: 61px;
   padding: 0;
   margin: 0;
-  padding-left: 64px;
-  padding-top: 10px;
 }
 
-.color__descr {
-  padding: 0;
-  margin: 0;
+.color__check + .color__descr {
+  display: block;
+  position: relative;
+  padding-left: 64px;
+  padding-top: 10px;
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: $black;
+
+  cursor: pointer;
+}
+
+.color__check + .color__descr::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+
+  background-color: $white;
+  border: 1px solid $gray;
+}
+
+.color__check + .color__descr::after {
+  content: "";
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  width: 30px;
+  height: 23px;
+  left: 5px;
+  top: 7px;
+
+  background: url("../img/icon-tick.svg") no-repeat;
+}
+
+.color__check:checked + .color__descr::after {
+  display: block;
+}
+
+.color__check:hover + .color__descr::before {
+  border: 1px solid #62d1ba;
+}
+
+.color__check:active + .color__descr::before {
+  border: 1px solid #c7c7c7;
+}
+
+.color__check:checked:hover + .color__descr::before {
+  border: 1px solid #62d1ba;
+}
+
+.color__check:checked:active + .color__descr::before {
+  border: 1px solid #c7c7c7;
+}
+
+@media (min-width: $tablet-width) {
+  .color {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 26px;
+    background-color: #f1f1f1;
+  }
+
+  .color__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: $tablet-content-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .color__legend {
+    box-sizing: border-box;
+    width: 167px;
+    min-height: 152px;
+    padding: 0;
+    margin: 0;
+    padding-top: 17px;
+
+    font-size: 17;
+    line-height: 17px;
+  }
+
+  .color__legend::after {
+  display: none;
+  }
+
+  .color__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 501px;
+    min-height: 152px;
+    margin-left: 167px;
+    margin-top: -152px;
+  }
+
+  .color__option {
+    width: 262px;
+    height: 76px;
+    padding: 0;
+  }
+
+  .color__option:nth-child(2n) {
+    width: 239px;
+  }
+
+  .color__descr {
+    box-sizing: border-box;
+    width: 100%;
+    height: 76px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  .color__check + .color__descr {
+    padding: 0;
+    margin: 0;
+    padding-left: 81px;
+    padding-top: 17px;
+  }
+
+  .color__check + .color__descr::before {
+    width: 53px;
+    height: 53px;
+  }
+
+  .color__check + .color__descr::after {
+    width: 40px;
+    height: 33px;
+    left: 11px;
+    top: 16.5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .color {
+    width: 100%;
+  }
+  .color__container {
+    width: $desktop-content-width;
+  }
+
+  .color__legend {
+    width: 175px;
+  }
+
+  .color__list {
+    width: 875px;
+    margin-left: 175px;
+  }
+
+  .color__option:nth-child(2n) {
+    width: 262px;
+  }
+
+  .color__option:nth-child(3n) {
+    width: 350px;
+  }
 }

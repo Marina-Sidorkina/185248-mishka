@@ -1,16 +1,13 @@
 .page-footer {
   display: block;
   box-sizing: border-box;
-  width: 320px;
-  padding: 0;
-  margin: 0 auto;
-
+  width: 100%;
 
   font-family: $default-font;
   font-weight: 400;
   color: $gray;
 
-  background-color: $white;
+  background-color: #f1f1f1;
 }
 
 .page-footer__container {
@@ -21,4 +18,43 @@
   width: 260px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.psge-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .page-footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: $tablet-content-width;
+    height: 143px;
+  }
+
+  .page-footer__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 190px;
+    height: 143px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .page-footer__container {
+    width: $desktop-content-width;
+  }
 }

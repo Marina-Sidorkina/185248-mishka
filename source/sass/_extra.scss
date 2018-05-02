@@ -8,7 +8,6 @@
   font-size: 0;
   line-height: 0;
   color: $black;
-  border: 1px solid $gray--light;
 }
 
 .extra__container {
@@ -18,6 +17,8 @@
   align-items: center;
   box-sizing: border-box;
 
+  margin: 0;
+  padding: 0;
   width: 260px;
   height: 79px;
   margin-left: auto;
@@ -26,6 +27,30 @@
 
 .extra__link {
   margin-right: 68px;
+}
+
+.extra__link {
+  fill: $black;
+}
+
+.extra__link:hover {
+  fill: #666666;
+}
+
+.extra__link:active {
+  fill: #b2b2b2;
+}
+
+.extra__link--index {
+  fill: $black;
+}
+
+.extra__link--index:hover {
+  fill: $black;
+}
+
+.extra__link--index:active {
+  fill: $black;
 }
 
 .extra__dropdown {
@@ -38,4 +63,69 @@
 .extra__button {
   width: 21px;
   height: 14px;
+
+  outline: none;
+}
+
+.extra__button--closed {
+  width: 21px;
+  height: 15px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+	background-color: red;
+  background: url("../img/icon-menu-open.svg") no-repeat;
+  background-position: center;
+}
+
+.extra__button--opened {
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background: url("../img/icon-menu-close.svg") no-repeat;
+  background-position: center;
+}
+
+.extra__button--opened .page-body {
+  margin-top: 395px;
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    box-sizing: border-box;
+    width: 320px;
+    height: 89px;
+    order: 0;
+
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+  }
+  .extra__container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 320px;
+    height: 89px;
+    padding-top: 22px;
+  }
+  .extra__dropdown {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    box-sizing: border-box;
+    width: 260px;
+    height: 89px;
+    order: 1;
+  }
+
+  .extra__container {
+    width: 260px;
+    padding-top: 22px;
+    padding-left: 50px;
+  }
 }
