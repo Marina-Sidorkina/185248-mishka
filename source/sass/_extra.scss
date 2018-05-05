@@ -29,6 +29,11 @@
   width: 86px;
   height: 35px;
   margin-right: 66.5px;
+  cursor: pointer;
+}
+
+.extra__link--index {
+  cursor: default;
 }
 
 .extra__link:hover {

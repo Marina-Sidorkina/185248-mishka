@@ -82,7 +82,7 @@
               <picture>
                 <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+                <img src="img/logo-mobile.svg" alt="Мишка">
               </picture>
             </a>
             <div class="extra__dropdown">
@@ -115,7 +115,7 @@
                 <svg class="user-block__svg" width="20.294px" height="18.849px">
                   <use xlink:href="#navigation__cart"></use>
                 </svg>
-                Корзина пока пуста
+                Корзина: пока пуста
               </a>
             </li>
           </ul>
@@ -146,7 +146,13 @@
             <div class="product-item__container">
               <a class="product-item__link" href="#">
                 <picture class="product-item__picture">
-                  <img class="product-item__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+                  <source type="image/webp" media="(min-width: 1250px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1250px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                  <img class="product-item__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
                 </picture>
               </a>
               <div class="product-item__description">
@@ -165,11 +171,17 @@
               </div>
             </div>
           </article>
-          <article class="product-item">
+          <article class="product-list__item product-item">
             <div class="product-item__container">
               <a class="product-item__link" href="#">
                 <picture class="product-item__picture">
-                  <img class="product-item__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+                  <source type="image/webp" media="(min-width: 1250px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1250px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/img/photo-bowl-tablet@2x.jpg 2x">
+                  <img class="product-item__img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
                 </picture>
               </a>
               <div class="product-item__description">
@@ -188,11 +200,17 @@
               </div>
             </div>
           </article>
-          <article class="product-item">
+          <article class="product-list__item product-item">
             <div class="product-item__container">
               <a class="product-item__link" href="#">
-                <picture>
-                  <img class="product-item__illustration" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Игрушки">
+                <picture class="product-item__picture">
+                  <source type="image/webp" media="(min-width: 1250px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1250px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                  <img class="product-item__illustration" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Игрушки">
                 </picture>
               </a>
               <div class="product-item__description">
@@ -201,7 +219,7 @@
               </div>
               <div class="product-item__spec">
                 <div class="product-item__spec-container">
-                  <span class="product-item__price">1 200 руб.</span>
+                  <span class="product-item__price">1 500 руб.</span>
                   <a class="product-item__cart js-cart" href="#" aria-label="Добавить в корзину">
                     <svg  class="product-item__svg" width="20.294px" height="18.849px">
                       <use xlink:href="#catalog__cart"></use>
@@ -220,7 +238,13 @@
           </h2>
           <div class="production__video video-block">
             <picture class="video-block__picture">
-              <img class="video-block__illustration" src="img/video-mobile@1x.jpg" width="260" height="150" alt="">
+              <source type="image/webp" media="(min-width: 1250px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1250px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video-block__illustration" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="">
             </picture>
             <button class="video-block__button" type="button" name="button">
               <svg class="video-block__svg" width="100.678px" height="76.891px">
@@ -236,25 +260,25 @@
 
     <footer class="page-footer">
       <div class="page-footer__container">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo page-footer__logo--index">
           <svg width="101.615px" height="34.056px">
             <use xlink:href="#page-footer__logo"></use>
           </svg>
         </a>
         <div class="social">
-          <a class="social__link" href="#">
+          <a class="social__link social__link--insta" href="#">
             <span class="visually-hidden">Инстаграм</span>
             <svg  class="social__svg" width="21.769px" height="21.334px">
               <use xlink:href="#instagram"></use>
             </svg>
           </a>
-          <a class="social__link" href="#">
+          <a class="social__link social__link--fb" href="#">
           <span class="visually-hidden">Фейсбук</span>
           <svg class="social__svg" width="14.962px" height="27.718px">
             <use xlink:href="#facebook"></use>
           </svg>
         </a>
-          <a class="social__link" href="#">
+          <a class="social__link social__link--tw" href="#">
             <span class="visually-hidden">Твиттер</span>
             <svg class="social__svg" width="23.494px" height="20.168px">
               <use xlink:href="#twitter"></use>

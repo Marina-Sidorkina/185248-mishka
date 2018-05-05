@@ -3,7 +3,7 @@
   width: 320px;
   padding: 0;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 31px;
 
   background-color: $white;
 }
@@ -37,12 +37,13 @@
   height: 95px;
   padding: 0;
   margin: 0;
+  padding-top: 22.5px;
 }
 
 .production__title {
   position: relative;
   width: 130px;
-  margin-left: 91px;
+  margin-left: 90px;
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
@@ -57,17 +58,17 @@
   width: 32px;
   height: 32px;
   top: 7px;
-  left: -67px;
+  left: -56px;
   background-image: url("../img/icon-video.svg");
 }
 
 .production__description {
   box-sizing: border-box;
-  width: 195px;
-  height: 173px;
+  width: 185px;
+  min-height: 172px;
   padding: 0;
   margin:  0;
-  padding-top: 34px;
+  padding-top: 27px;
   margin-left: 34px;
 
   font-family: $default-font;
@@ -82,7 +83,7 @@
   width: 192px;
   height: 52px;
   padding-top: 15px;
-  margin-left: 34px;
+  margin-left: 33.5px;
   margin-bottom: 32px;
 
   font-family: $default-font;
@@ -115,7 +116,8 @@
 @media (min-width: $tablet-width) {
   .production {
     width: 100%;
-    margin-bottom: 63px;
+    margin-top: 0;
+    margin-bottom: 75.5px;
   }
 
   .production__container {
@@ -136,7 +138,7 @@
   .production__header {
     order: 1;
     width: 586px;
-    height: 100px;
+    height: 94px;
     margin-left: auto;
     margin-right: auto;
 
@@ -147,9 +149,12 @@
   .production__title {
     position: relative;
     width: 586px;
-    padding-left: 67px;
-    padding-top: 40px;
+    padding-left: 66px;
+    padding-top: 16px;
     margin: 0;
+
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .production__title::before {
@@ -158,15 +163,15 @@
     display: block;
     width: 32px;
     height: 32px;
-    top: 34px;;
-    left: 0;
+    top: 11px;
+    left: 1px;
     background-image: url("../img/icon-video.svg");
   }
 
   .production__description {
     order: 2;
     width: 586px;
-    height: 90px;
+    min-height:  95px;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -177,10 +182,9 @@
 
   .production__link {
     order: 3;
-    width: 586px;
+    width: 584px;
     height: 52px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 42px;
 
     font-size: 17px;
     line-height: 17px;
