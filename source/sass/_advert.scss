@@ -1,4 +1,5 @@
 .advert {
+  position: relative;
   display: block;
   box-sizing: border-box;
   width: 320px;
@@ -11,6 +12,16 @@
   color: $black;
 
   background-color: $white;
+}
+
+.advert::after {
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  bottom: 2px;
+  right: 0;
+  background: transparent url("../img/bg-zigzag-line.svg") repeat-x;
 }
 
 .advert__container {
@@ -27,7 +38,8 @@
   display: block;
   box-sizing: border-box;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 27px;
+  margin-left: 1px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -39,7 +51,7 @@
   display: block;
   box-sizing: border-box;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 4.5px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -51,7 +63,9 @@
 
 .advert__description {
   margin: 0;
-  margin-top: 30px;
+  padding: 0;
+  margin-top: 23.5px;
+  margin-left: 1px;
 
   font-family: $default-font;
   font-weight: 400;
@@ -62,7 +76,7 @@
 
 .advert__specification {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 28.5px;
 }
 
 .advert__add {
@@ -70,15 +84,23 @@
   flex-direction: column;
 }
 
+.advert__illustration {
+  width: 260px;
+  height: 315px;
+  background-color: #f1f1f1;
+  margin-left: 0.5px
+}
+
 .advert__price {
   box-sizing: border-box;
   width: 260px;
-  min-height: 73px;
-  padding-top: 30px;
+  min-height: 74px;
+  padding-top: 23.5px;
+  margin-left: -1.5px;
 
   font-family: $default-font;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 24px;
   color: $gray;
   text-align: center;
@@ -86,9 +108,10 @@
 
 .advert__order {
   box-sizing: border-box;
-  width: 260px;
+  width: 259px;
   min-height: 52px;
-  padding-top: 15px;
+  padding-top: 13.5px;
+  margin-left: 0.5px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -119,13 +142,28 @@
 
 @media (min-width: $tablet-width) {
   .advert {
-    width: 100%
+    width: $tablet-width;
+    padding-bottom: 68px;
+  }
+
+  .advert::after {
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background: url("../img/bg-zigzag-line.svg") repeat-x;
+    background-size: auto 6px;
+    transform: rotate(180deg);
+    height: 17px;
+    background-position: 0 0;
+    background-size: 768px 17px;
   }
 
   .advert__container {
     display: flex;
     flex-direction: column;
     width: $tablet-content-width;
+    padding: 0;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -135,26 +173,30 @@
     align-items: center;
     box-sizing: border-box;
     width: $tablet-content-width;
-    min-height: 155px;
+    height: 140px;
   }
 
   .advert__header {
+    box-sizing: border-box;
     width: 568px;
-    min-height: 155px;
+    min-height: 149px;
     padding: 0;
     margin: 0;
-    padding-top: 45px;
+    padding-top: 51px;
+    margin-left: -2px;
 
     font-size: 43px;
     line-height: 50px;
   }
 
   .advert__category {
+    box-sizing: border-box;
     min-height: 155px;
     width: 100px;
     padding: 0;
     margin: 0;
-    padding-top: 55px;
+    padding-top: 65.5px;
+    margin-right: 12px;
 
     font-size: 17px;
     line-height: 17px;
@@ -163,9 +205,11 @@
 
   .advert__description {
     order: 2;
+    box-sizing: border-box;
     width: 50%;
     height: 120px;
-    margin-top: -404px;
+    margin-top: -412px;
+    padding-right: 34px;
 
     font-size: 17px;
     line-height: 30px;
@@ -181,27 +225,30 @@
   .advert__add {
     justify-content: flex-end;
     order: 4;
-    width: 50%;
-    height: 164px;
+    width: 293px;
+    min-height: 164px;
   }
 
   .advert__price {
     width: 100%;
-    height: 98px;
-    padding-top: 55px;
+    height: 115px;
+    padding-top: 56px;
 
     font-size: 20px;
   }
 
   .advert__order {
-    width: 291px;
+    width: 292px;
+    margin-left: -0.5px;
   }
 
   .advert__illustration {
     order: 1;
-    margin-left: auto;
     width: 333px;
     height: 404px;
+    margin-left: auto;
+    margin-top: 14px;
+    background-color: red;
   }
 }
 

@@ -38,8 +38,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 100px;
-  padding-top: 35px;
+  min-height: 90px;
+  padding-top: 35.5px;
+  margin-left: -1px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -49,11 +50,32 @@
 }
 
 .contacts__list {
+  box-sizing: border-box;
+  width: 260px;
   padding: 0;
   margin: 0;
+  margin-left: -1px;
 
   font-size: 15px;
   line-height: 30px;
+  border-collapse: collapse;
+  border: none;
+}
+
+.contacts__row:first-child {
+  height: 60px;
+}
+
+.contacts__cat {
+  vertical-align: top;
+}
+
+.contacts__value {
+  vertical-align: top;
+}
+
+.contacts__value--address {
+  padding-right: 20px;
 }
 
 .contacts__value--email {
@@ -79,7 +101,7 @@
   width: 100%;
   height: 1px;
   background-color: #46c1ae;
-	top: 23px;
+	top: 24px;
 	left: 0;
 }
 
@@ -90,25 +112,62 @@
 
 .contacts__map {
   display: flex;
-  justify-content: center;
-  align-items: center;
   box-sizing: border-box;
+  height: 457px;
+  width: 100%;
   padding: 0;
   margin: 0 auto;
-  width: 100%;
-  margin-top: 45px;
+  margin-top: 36px;
 
   line-height: 0;
   background-color: #dfdfdf;
+}
+
+.contacts__container--map {
+  position: relative;
+  width: 320px;
+  height: 457px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/map-mobile@1x.jpg") no-repeat center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+     background-image: url("../img/map-mobile@2x.jpg");
+     background-size: 320px 457px;
+   }
+}
+
+.contacts__container--map::before {
+  content:"";
+  position: absolute;
+  display: block;
+  width: 67px;
+  height: 100px;
+  top: 145px;
+  right: 115px;
+  background: transparent url("../img/icon-map-pin.svg") repeat-x;
+}
+
+.google-map {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 457px;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
 }
 
 .contacts__write-us-link {
   box-sizing: border-box;
   width: 260px;
   height: 52px;
-  padding-top: 15px;
-  margin-top: 38px;
+  padding-top: 13.5px;
+  margin-top: 39px;
   margin-bottom: 40px;
+  margin-left: 0.5px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -142,7 +201,7 @@
     width: 100%;
   }
 
-  .contacts__container {
+  .contacts__container--main {
     width: $tablet-content-width;
     margin-left: auto;
     margin-right: auto;
@@ -162,6 +221,7 @@
     width: 100%;
     height: 81px;
     padding-top: 15px;
+    margin-left: -3px;
 
     font-size: 43px;
     line-height: 50px;
@@ -174,8 +234,9 @@
     width: 47px;
     height: 81px;
     background-image: url("../img/icon-flag.svg");
-    bottom: 0;
-    right: 0;
+    background-repeat: no-repeat;
+    top: 0;
+    right: -2px;
   }
   .contacts__container--link {
     display: flex;
@@ -186,7 +247,36 @@
   }
 
   .contacts__write-us-link {
-    width: 230px
+    width: 230px;
+    margin-left: 3px;
+
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .contacts__map {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    line-height: 0;
+    background-color: #dfdfdf;
+  }
+
+  .contacts__container--map {
+    width: 768px;
+    height: 457px;
+    background-image: url("../img/map-tablet@1x.jpg") no-repeat center;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+       background-image: url("../img/map-tablet@2x.jpg");
+       background-size: 768px 457px;
+     }
+  }
+
+  .contacts__container--map::before {
+    content:"";
+    top: 139px;
+    right: 338px;
   }
 }
 
@@ -194,7 +284,7 @@
   .contacts__list {
     box-sizing: border-box;
     width: 100%;
-    min-height: 179px;
+    min-height: 170px;
 
     font-size: 17px;
     line-height: 30px;
@@ -206,14 +296,14 @@
     flex-wrap: nowrap;
     box-sizing: border-box;
     width: 100%;
-    min-height: 179px;
+    min-height: 170px;
   }
 
   .contacts__cat,
   .contacts__value {
     display: block;
     box-sizing: border-box;
-    padding-top: 40px;
+    padding-top: 24px;
   }
 
   .contacts__row {
@@ -226,7 +316,7 @@
   }
 
   .contacts__value--address {
-    width: 240px;
+    width: 245px;
   }
 }
 

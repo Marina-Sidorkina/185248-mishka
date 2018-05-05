@@ -5,6 +5,10 @@
   var carts = document.querySelectorAll(".js-cart");
   var popup = document.querySelector(".modal");
 
+  nav.classList.remove("navigation--show");
+  user.classList.remove("user-block--show");
+  open.classList.remove("extra__button--opened");
+
   open.addEventListener("click", function(evt) {
     if (open.classList.contains("extra__button--opened")) {
       evt.preventDefault();

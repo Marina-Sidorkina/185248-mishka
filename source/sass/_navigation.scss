@@ -60,6 +60,16 @@
   color: #cecece;
 }
 
+.navigation__link--form:hover,
+.navigation__link--catalog:hover {
+  color: $black;
+}
+
+.navigation__link--form:active,
+.navigation__link--catalog:active {
+  color: $black;
+}
+
 
 @media (min-width: $tablet-width) {
   .navigation {
@@ -88,8 +98,8 @@
   .navigation__link {
     width: 167px;
     height: 65px;
-    padding-left: 0;
-    padding-top: 20px;
+    padding-left: 1px;
+    padding-top: 17.5px;
 
     font-size: 15px;
     border: none;

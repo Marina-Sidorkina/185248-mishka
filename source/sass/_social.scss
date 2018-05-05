@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   box-sizing: border-box;
-  height: 81px;
+  height: 80px;
   padding-left: 58px;
 
   border-bottom: 1px solid #e5e5e5;
@@ -11,6 +11,21 @@
 
 .social__link {
   margin-right: 40px;
+}
+
+.social__link--insta {
+  margin-left: -0.5px;
+  margin-top: 5px;
+}
+
+.social__link--fb {
+  margin-left: 1.5px;
+  margin-top: 1px;
+}
+
+.social__link--tw {
+  margin-left: -0.5px;
+  margin-top: 4px;
 }
 
 .social__svg {
@@ -33,6 +48,8 @@
     width: 141px;
     margin: 0;
     padding: 0;
+    margin-left: 85px;
+    margin-top: 4px;
 
     border: none;
   }
