@@ -281,12 +281,48 @@
 
 
 @media (min-width: $desktop-width) {
+  .promo {
+    margin-top: -66.5px;
+  }
+
   .promo__description {
     width: $desktop-content-width;
+    width: 1050px;
+    min-height: 628px;
+    padding-top: 18px;
+
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 1150px 746px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+       background-image: url("../img/hero-desktop@2x.jpg");
+       background-size: 1150px 746px;
+     }
+
+    background-position: -49px -66px;
+  }
+
+  .promo__align {
+    width: 650px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .promo__items {
     width: $desktop-content-width;
+  }
+
+  .promo__items::after {
+    content:"";
+    position: absolute;
+    bottom: -17px;
+    left: -99px;
+    width: 1250px;
+    height: 34px;
+    background: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 1250px 38px;
   }
 
   .promo__wrapper {

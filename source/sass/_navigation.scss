@@ -120,16 +120,22 @@
   }
 
   .navigation__item {
-    width: 220px;
+    width: 185px;
     height: 89px;
   }
 
   .navigation__link {
-    width: 220px;
     height: 89px;
-    padding-top: 30px;
+    padding-top: 32px;
+    padding-left: 0;
 
     font-size: 17px;
     border: none;
+  }
+
+  .navigation__item--border {
+    width: 185px;
+    border-right: 1px solid $gray--light;
+    margin-right: 35px;
   }
 }

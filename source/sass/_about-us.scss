@@ -238,13 +238,24 @@
 @media (min-width: $desktop-width) {
   .about-us__container {
     width: 700px;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
 
   .about-us__title {
     width: 100%;
-    min-height: 165px;
-    padding-top: 55px;
+    min-height: 163px;
+    padding-top: 58.5px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    width: 700px;
+  }
+
+  .about-us__detail {
+    width: 350px;
   }
 
   .about-us__detail--handmade {

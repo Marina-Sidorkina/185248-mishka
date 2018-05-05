@@ -149,7 +149,6 @@
   .advert::after {
     bottom: 0;
     width: 100%;
-    height: 6px;
     background: url("../img/bg-zigzag-line.svg") repeat-x;
     background-size: auto 6px;
     transform: rotate(180deg);
@@ -254,9 +253,22 @@
 
 @media (min-width: $desktop-width) {
   .advert {
-    padding-bottom: 70px;
+    width: $desktop-content-width;
+    padding-bottom: 98px;
     margin-top: 71px;
   }
+
+  .advert::after {
+    bottom: 0;
+    width: 100%;
+    background: url("../img/bg-zigzag-line.svg") repeat-x;
+    background-size: auto 26px;
+    transform: rotate(180deg);
+    height: 26px;
+    background-position: 0 0;
+    background-size: 1050px 26px;
+  }
+
 
   .advert__container {
     width: $desktop-content-width;
@@ -271,7 +283,8 @@
   .advert__header {
     width: 875px;
     min-height: 165px;
-    padding-top: 45px;
+    padding-top: 54px;
+    margin-left: -14px;
 
     font-size: 53px;
     line-height: 57px;
@@ -281,8 +294,8 @@
     order: -1;
     min-height: 155px;
     width: 175px;
-    padding-top: 55px;
-    padding-left: 50px;
+    padding-top: 64px;
+    padding-left: 42px;
     padding-right: 50px;
 
     text-align: center;
@@ -290,10 +303,11 @@
 
   .advert__description {
     order: 2;
-    width: 291px;
+    width: 320px;
     min-height: 120px;
-    margin-top: -471px;
+    margin-top: -478px;
     margin-left: 175px;
+    padding-left: 2px;
 
     font-size: 17px;
     line-height: 30px;
@@ -308,20 +322,25 @@
 
   .advert__add {
     width: 291px;
-    min-height: 222px;
-    margin-left: 175px;
+    min-height: 200px;
+    margin-left: 176px;
   }
 
   .advert__price {
     width: 291px;
-    height: 165px;
-    padding-top: 106px;
+    height: 150px;
+    padding-top: 109px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: 1px;
 
     font-size: 20px;
   }
 
   .advert__order {
-    width: 291px;
+    width: 293px;
+    padding-top: 14px;
+    margin-top: 17px;
   }
 
   .advert__illustration {

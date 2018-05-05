@@ -147,6 +147,7 @@
     order: 2;
     width: 350px;
     height: 89px;
+    background-color: transparent;
   }
 
   .user-block__list {
@@ -155,16 +156,18 @@
   }
 
   .user-block__link--search {
-    width: 84px;
+    width: 85px;
     height: 89px;
     padding-top: 35px;
+    background-color: transparent;
   }
 
   .user-block__link--cart {
     width: 266px;
     height: 89px;
-    padding-top: 35px;
-    padding-left: 85px;
+    padding-top: 32px;
+    padding-left: 84px;
+    margin-right: -5px;
   }
 
   .user-block__svg {
