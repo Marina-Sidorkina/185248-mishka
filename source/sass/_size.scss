@@ -13,7 +13,7 @@
   display: none;
 }
 
-.size__button {
+.size__radio + .size__button {
   display: block;
   box-sizing: border-box;
   width: 82px;
@@ -33,10 +33,10 @@
   cursor: pointer;
 }
 
-.size__button:hover {
+.size__radio:hover + .size__button {
   border: 2px solid #c7c7c7;
 }
 
-.size__button:active {
+.size__radio:checked + .size__button {
   border: 2px solid #62d1ba;
 }

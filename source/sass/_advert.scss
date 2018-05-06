@@ -91,6 +91,11 @@
   margin-left: 0.5px
 }
 
+.advert__img {
+  width: 260px;
+  height: 315px;
+}
+
 .advert__price {
   box-sizing: border-box;
   width: 260px;
@@ -249,6 +254,11 @@
     margin-top: 14px;
     background-color: red;
   }
+
+  .advert__img {
+    width: 333px;
+    height: 404px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -348,5 +358,10 @@
     width: 525px;
     height: 636px;
     margin-top: -164px;
+  }
+
+  .advert__img {
+    width: 525px;
+    height: 636px;
   }
 }
