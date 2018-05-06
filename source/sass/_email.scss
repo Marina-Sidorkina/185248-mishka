@@ -87,7 +87,7 @@
   .email {
     box-sizing: border-box;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 48px;
     background-color: #f1f1f1;
     margin-bottom: 50px;
   }
@@ -97,6 +97,7 @@
     flex-direction: row;
     width: $tablet-content-width;
     height: 77px;
+    padding-left: 2px;
   }
 
   .email__legend {
@@ -105,7 +106,7 @@
     height: 77px;
     margin: 0;
     padding: 0;
-    padding-top: 37px;
+    padding-top: 40px;
   }
 
   .email__legend::after {
@@ -115,10 +116,10 @@
   .email__input {
     box-sizing: border-box;
     width: 501px;
-    height: 77px;
+    height: 76px;
     margin: 0;
     padding: 0;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 17px;
 
     font-size: 19px;
@@ -128,6 +129,7 @@
 
   .email__svg {
     right: 21px;
+    top: 34px;
   }
 }
 
@@ -135,10 +137,12 @@
 
   .email__container {
     width: $desktop-content-width;
+    padding-left: 0;
   }
 
   .email__legend {
     width: 175px;
+    padding-left: 62px;
   }
 
   .email__input {
@@ -146,6 +150,6 @@
   }
 
   .email__svg {
-    right: 175px;
+    right: 178px;
   }
 }

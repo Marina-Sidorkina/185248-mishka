@@ -79,11 +79,11 @@
       <div class="page-header__container">
         <div class="extra">
           <div class="extra__container">
-            <a class="extra__link" href="index.html">
+            <a class="extra__link">
               <picture>
                 <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+                <img src="img/logo-mobile.svg" alt="Мишка">
               </picture>
             </a>
             <div class="extra__dropdown">
@@ -116,7 +116,7 @@
                 <svg class="user-block__svg" width="20.294px" height="18.849px">
                   <use xlink:href="#navigation__cart"></use>
                 </svg>
-                Корзина пока пуста
+                Корзина: пока пуста
               </a>
             </li>
           </ul>
@@ -199,15 +199,15 @@
             <ul class="user-form__list">
               <li class="user-form__item">
                 <label class="user-form__label user-form__label--name" for="name">Имя:</label>
-                <input class="user-form__input user-form__input--name" type="text" value="Введите ваше имя*" id="name" required>
+                <input class="user-form__input user-form__input--name" name="name" type="text" value="Введите ваше имя*" id="name" required>
               </li>
               <li class="user-form__item">
                 <label class="user-form__label" for="surname">Фамилия:</label>
-                <input class="user-form__input" type="text" value="Укажите фамилию*" id="surname" required>
+                <input class="user-form__input" name="surname" type="text" value="Укажите фамилию*" id="surname" required>
               </li>
               <li class="user-form__item">
                 <label class="user-form__label" for="second-name">Отчество:</label>
-                <input class="user-form__input" type="text" value="Отчество, если желаете" id="second-name">
+                <input class="user-form__input" name="second-name" type="text" value="Отчество, если желаете" id="second-name">
               </li>
             </ul>
           </div>
@@ -215,7 +215,7 @@
         <section class="forms__item tel">
           <div class="tel__container">
             <h2 class="tel__legend">Тел</h2>
-            <input class="tel__input" type="tel" value="+7 XXX XX XX*">
+            <input class="tel__input" name="tel" type="tel" value="+7 XXX XX XX*">
             <svg class="tel__svg" width="24.829px" height="24.333px">
                <use xlink:href="#tel"></use>
             </svg>
@@ -224,7 +224,7 @@
         <section class="forms__item email">
           <div class="email__container">
             <h2 class="email__legend">E-mail</h2>
-            <input class="email__input" type="email" value="Ваш Email*">
+            <input class="email__input" type="email" name="email" value="Ваш Email*">
             <svg class="email__svg" width="32px" height="32px">
               <use xlink:href="#email"></use>
             </svg>
@@ -233,7 +233,7 @@
         <section class="forms__item addit">
           <div class="addit__container">
             <h2 class="addit__legend">Доп</h2>
-            <textarea class="addit__input" name="name" rows="20">Опишите все ваши пожелания к заказу</textarea>
+            <textarea class="addit__input" name="comments">Опишите все ваши пожелания к заказу</textarea>
           </div>
         </section>
         <div class="forms__send">
@@ -247,7 +247,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__container">
-        <a class="page-footer__logo page-footer__logo--index">
+        <a class="page-footer__logo">
           <svg width="101.615px" height="34.056px">
             <use xlink:href="#page-footer__logo"></use>
           </svg>

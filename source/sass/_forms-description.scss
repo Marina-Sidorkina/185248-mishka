@@ -38,7 +38,7 @@
 
   .forms-description__container {
     width: $tablet-content-width;
-    min-height: 190px;
+    min-height: 177.5px;
     padding: 0;
     margin: 0;
     margin-left: auto;
@@ -48,10 +48,11 @@
   .forms-description__text {
     box-sizing: border-box;
     width: $tablet-content-width;
-    min-height: 190px;
+    min-height: 140px;
     padding: 0;
     margin: 0;
-    padding-top: 80px;
+    padding-top: 61px;
+    padding-bottom: 0;
 
     font-size: 17px;
     line-height: 30px;
@@ -67,7 +68,7 @@
   .forms-description__text {
     width: 700px;
      min-height: 238px;
-     padding-top: 127px;
+     padding-top: 121px;
      margin-left: 175px;
    }
 }

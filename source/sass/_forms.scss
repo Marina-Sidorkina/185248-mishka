@@ -86,7 +86,7 @@
 
   .forms__send {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .forms__container {
@@ -108,6 +108,7 @@
 
     font-size: 17px;
     line-height: 30px;
+    margin-right: -2px;
   }
 
   .forms__button {
@@ -115,6 +116,10 @@
     height: 52px;
     margin: 0;
     padding: 0;
+    margin-left: 1px;
+    padding-left: 29px;
+
+    text-align: left;
   }
 }
 
@@ -123,8 +128,13 @@
     width: $desktop-content-width;
   }
 
+  .forms__send {
+     margin-bottom: 39px;
+  }
+
   .forms__note {
-    margin-right: 175px;
+    margin-right: 173px;
+    padding-top: 10px;
   }
 
   .forms__button {

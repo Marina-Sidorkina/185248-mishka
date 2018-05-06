@@ -157,13 +157,14 @@
     padding: 0;
     margin: 0;
     padding-top: 17px;
+    padding-left: 2px;
 
     font-size: 17;
     line-height: 17px;
   }
 
   .type__legend::after {
-  display: none;
+    display: none;
   }
 
   .type__list {
@@ -177,14 +178,15 @@
   }
 
   .type__option {
-    height: 76px;
+    width: 501px;
+    min-height: 76px;
     padding: 0;
   }
 
   .type__descr {
     box-sizing: border-box;
     width: 501px;
-    height: 76px;
+    min-height: 76px;
     margin: 0;
     padding: 0;
 
@@ -196,25 +198,31 @@
     padding: 0;
     margin: 0;
     padding-left: 81px;
-    padding-top: 17px;
+    padding-top: 14.5px;
+
+    font-size: 19px;
+    line-height: 19px;
   }
 
   .type__radio + .type__descr::before {
     width: 52px;
     height: 52px;
+    top: 0.5px;
+    left: 0.5px;
   }
 
   .type__radio + .type__descr::after {
-    width: 20px;
-    height: 20px;
-    left: 16.5px;
-    top: 16.5px;
+    width: 20.5px;
+    height: 20.5px;
+    left: 16px;
+    top: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .type {
     width: 100%;
+    padding-bottom: 25px;
   }
   .type__container {
     width: $desktop-content-width;
@@ -222,6 +230,7 @@
 
   .type__legend {
     width: 175px;
+    padding-left: 65px;
   }
 
   .type__list {
@@ -230,5 +239,15 @@
   }
   .type__descr {
     width: 875px;
+  }
+
+  .type__radio + .type__descr::before {
+    top: 0;
+    left: 0.5px;
+  }
+
+  .type__radio + .type__descr::after {
+    left: 16px;
+    top: 15.5px;
   }
 }
