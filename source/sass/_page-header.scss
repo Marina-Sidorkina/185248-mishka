@@ -34,8 +34,9 @@
 }
 
 .page-header__delivery {
-  display: none;
   order: 4;
+
+  display: none;
   box-sizing: border-box;
   width: 232px;
   height: 79px;
@@ -60,8 +61,9 @@
   }
 
   .page-header__delivery {
-    display: block;
     order: 4;
+
+    display: block;
     box-sizing: border-box;
     width: 231px;
     height: 65px;

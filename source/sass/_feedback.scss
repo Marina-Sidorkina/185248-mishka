@@ -1,10 +1,11 @@
 .feedback {
   position: relative;
+
   display: block;
   box-sizing: border-box;
   width: 320px;
-  padding: 0;
   margin: 0 auto;
+  padding: 0;
 
   font-family: $default-font;
   font-weight: 700;
@@ -25,11 +26,14 @@
 
 .feedback::after {
   content:"";
+
   position: absolute;
-  width: 100%;
-  height: 6px;
   bottom: 0;
   right: 0;
+
+  width: 100%;
+  height: 6px;
+
   background: transparent url("../img/bg-zigzag-line.svg") repeat-x;
 }
 
@@ -69,8 +73,8 @@
 }
 
 .feedback__author {
-  padding-top: 26px;
   margin-left: 0.5px;
+  padding-top: 26px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -107,17 +111,18 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
   box-sizing: border-box;
   width: 130px;
   height: 50px;
-  padding: 0;
   margin: 0;
+  padding: 0;
   padding-left: 38px;
 
   border: none;
   background-color: $white;
   cursor: pointer;
-  outline: none;
+  outline: transparent;
 }
 
 .feedback__arrow--left {
@@ -150,10 +155,10 @@
   box-sizing: border-box;
   width: 260px;
   height: 52px;
-  padding-top: 13.5px;
   margin-top: 38px;
   margin-bottom: 51px;
   margin-left: 0.5px;
+  padding-top: 13.5px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -177,6 +182,7 @@
 то есть как и у ховера, но визуально явно светлей*/
 .feedback__add-link:active {
   color: #8d8d8d;
+
   background-color: $gray;
   opacity: 0.9;
 }
@@ -185,14 +191,16 @@
 @media (min-width: $tablet-width) {
   .feedback {
     width: $tablet-width;
-    padding-bottom: 87px;
     margin-bottom: 45px;
+    padding-bottom: 87px;
   }
 
   .feedback__container {
     position: relative;
+
     flex-direction: row;
     flex-wrap: wrap;
+
     width: $tablet-width;
     padding-left: 47px;
     padding-right: 50px;
@@ -209,14 +217,17 @@
 
   .feedback::after {
     bottom: 0;
+
     width: 100%;
-    height: 6px;
+    height: 17px;
+
+
     background: url("../img/bg-zigzag-line.svg") repeat-x;
     background-size: auto 6px;
-    transform: rotate(180deg);
-    height: 17px;
     background-position: 0 0;
     background-size: 768px 17px;
+
+    transform: rotate(180deg);
   }
 
   .feedback__title {
@@ -230,6 +241,7 @@
 
   .feedback__add-link {
     order: 1;
+
     width: 175px;
     margin-top: 79px;
     margin-left: 7px;
@@ -249,9 +261,9 @@
   .feedback__text {
     width: 100%;
     min-height: 135px;
-    padding-top: 0;
     margin-top: -6px;
     margin-left: 1px;
+    padding-top: 0;
 
     font-size: 17px;
     line-height: 30px;
@@ -285,6 +297,7 @@
     width: 175px;
     margin-top: 47px;
     margin-right: -1px;
+
     border: none;
   }
 
@@ -296,19 +309,22 @@
 @media (min-width: $desktop-width) {
   .feedback {
     width: $desktop-content-width;
-    padding-bottom: 90px;
     margin-bottom: 71px;
+    padding-bottom: 90px;
   }
 
   .feedback::after {
     bottom: 0;
+
     width: 100%;
+    height: 26px;
+
     background: url("../img/bg-zigzag-line.svg") repeat-x;
     background-size: auto 26px;
-    transform: rotate(180deg);
-    height: 26px;
     background-position: 0 0;
     background-size: 1050px 26px;
+
+    transform: rotate(180deg);
   }
 
   .feedback__container {
@@ -320,12 +336,17 @@
 
   .feedback__title {
     padding-top: 70px;
+
     font-size: 53px;
     line-height: 57px;
   }
 
   .feedback__add-link {
     margin-left: 211px;
+  }
+
+  .feedback__text {
+    padding-right: 86px;
   }
 
   .feedback__author {

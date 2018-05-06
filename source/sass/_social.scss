@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+
   box-sizing: border-box;
   height: 81px;
   padding-left: 58px;
@@ -45,6 +46,7 @@
   .social {
     display: flex;
     justify-content: space-between;
+
     width: 141px;
     margin: 0;
     padding: 0;

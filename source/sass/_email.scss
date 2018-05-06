@@ -6,6 +6,7 @@
 
 .email__container {
   position: relative;
+
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -16,10 +17,11 @@
 
 .email__legend {
   position: relative;
-  padding: 0;
+
   margin: 0;
   margin-top: 8.5px;
   margin-bottom: 6.5px;
+  padding: 0;
 
   font-family: $default-font;
   font-weight: 700;
@@ -32,12 +34,15 @@
 
 .email__legend::after {
   content: "";
+
   position: absolute;
+  top: 55%;
+  right: 0;
+
   display: block;
   width: 179px;
   height: 1px;
-  top: 55%;
-  right: 0;
+
   background-color: #62d1ba;
 }
 
@@ -51,13 +56,14 @@
   color: #d2d2d2;
 
   border: none;
-  outline: none;
   border-bottom: 2px solid $black;
+  outline: transparent;
 }
 
 
 .email__svg {
   display: block;
+
   position: absolute;
   top: 43px;
   right: 4px;
@@ -87,14 +93,16 @@
   .email {
     box-sizing: border-box;
     width: 100%;
-    padding-bottom: 48px;
-    background-color: #f1f1f1;
     margin-bottom: 50px;
+    padding-bottom: 48px;
+
+    background-color: #f1f1f1;
   }
 
   .email__container {
     display: flex;
     flex-direction: row;
+
     width: $tablet-content-width;
     height: 77px;
     padding-left: 2px;

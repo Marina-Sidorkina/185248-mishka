@@ -1,6 +1,7 @@
 .extra-navigation {
-  display: none;
   order: 3;
+
+  display: none;
   width: 320px;
   padding: 0;
   margin: 0;
@@ -14,17 +15,18 @@
   flex-direction:  row;
   flex-wrap: wrap;
 
-  list-style-type: none;
   padding: 0;
   margin: 0;
+
+  list-style-type: none;
 }
 
 .extra-navigation__item  {
   box-sizing: border-box;
   width: 320px;
   height: 79px;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .extra-navigation__link {
@@ -55,14 +57,16 @@
 
 @media (min-width: $desktop-width) {
   .extra-navigation {
+    order: 3;
     display: block;
     flex-direction: row;
-    order: 3;
+
     box-sizing: border-box;
     width: 785px;
     min-height: 65px;
-    padding: 0;
     margin: 0;
+    padding: 0;
+
     background-color: transparent;
   }
 

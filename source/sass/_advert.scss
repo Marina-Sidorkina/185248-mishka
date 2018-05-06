@@ -1,11 +1,12 @@
 .advert {
   position: relative;
+
   display: block;
   box-sizing: border-box;
   width: 320px;
+  margin: 0 auto;
   padding: 0;
   padding-bottom: 43px;
-  margin: 0 auto;
 
   font-family: $default-font;
   font-weight: 400;
@@ -16,11 +17,14 @@
 
 .advert::after {
   content:"";
+
   position: absolute;
-  width: 100%;
-  height: 6px;
   bottom: 2px;
   right: 0;
+
+  width: 100%;
+  height: 6px;
+
   background: transparent url("../img/bg-zigzag-line.svg") repeat-x;
 }
 
@@ -63,9 +67,9 @@
 
 .advert__description {
   margin: 0;
-  padding: 0;
   margin-top: 23.5px;
   margin-left: 1px;
+  padding: 0;
 
   font-family: $default-font;
   font-weight: 400;
@@ -87,8 +91,9 @@
 .advert__illustration {
   width: 260px;
   height: 315px;
+  margin-left: 0.5px;
+
   background-color: #f1f1f1;
-  margin-left: 0.5px
 }
 
 .advert__img {
@@ -100,8 +105,8 @@
   box-sizing: border-box;
   width: 260px;
   min-height: 74px;
-  padding-top: 23.5px;
   margin-left: -1.5px;
+  padding-top: 23.5px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -115,8 +120,8 @@
   box-sizing: border-box;
   width: 259px;
   min-height: 52px;
-  padding-top: 13.5px;
   margin-left: 0.5px;
+  padding-top: 13.5px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -153,28 +158,34 @@
 
   .advert::after {
     bottom: 0;
+
     width: 100%;
+    height: 17px;
+
     background: url("../img/bg-zigzag-line.svg") repeat-x;
     background-size: auto 6px;
-    transform: rotate(180deg);
-    height: 17px;
+
     background-position: 0 0;
     background-size: 768px 17px;
+
+    transform: rotate(180deg);
   }
 
   .advert__container {
     display: flex;
     flex-direction: column;
+
     width: $tablet-content-width;
-    padding: 0;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
   }
 
   .advert__wrapper {
     display: flex;
     align-items: center;
+
     box-sizing: border-box;
     width: $tablet-content-width;
     height: 140px;
@@ -184,8 +195,8 @@
     box-sizing: border-box;
     width: 568px;
     min-height: 149px;
-    padding: 0;
     margin: 0;
+    padding: 0;
     padding-top: 51px;
     margin-left: -2px;
 
@@ -197,8 +208,8 @@
     box-sizing: border-box;
     min-height: 155px;
     width: 100px;
-    padding: 0;
     margin: 0;
+    padding: 0;
     padding-top: 65.5px;
     margin-right: 12px;
 
@@ -209,6 +220,7 @@
 
   .advert__description {
     order: 2;
+
     box-sizing: border-box;
     width: 50%;
     height: 120px;
@@ -221,14 +233,17 @@
 
   .advert__specification {
     order: 3;
+
     width: 50%;
     height: 120px;
     margin: 0;
   }
 
   .advert__add {
-    justify-content: flex-end;
     order: 4;
+
+    justify-content: flex-end;
+
     width: 293px;
     min-height: 164px;
   }
@@ -248,10 +263,12 @@
 
   .advert__illustration {
     order: 1;
+
     width: 333px;
     height: 404px;
     margin-left: auto;
     margin-top: 14px;
+
     background-color: red;
   }
 
@@ -264,19 +281,22 @@
 @media (min-width: $desktop-width) {
   .advert {
     width: $desktop-content-width;
-    padding-bottom: 98px;
     margin-top: 71px;
+    padding-bottom: 98px;
   }
 
   .advert::after {
     bottom: 0;
+
     width: 100%;
+    height: 26px;
+
     background: url("../img/bg-zigzag-line.svg") repeat-x;
     background-size: auto 26px;
-    transform: rotate(180deg);
-    height: 26px;
     background-position: 0 0;
     background-size: 1050px 26px;
+
+    transform: rotate(180deg);
   }
 
 
@@ -286,6 +306,7 @@
 
   .advert__wrapper {
     z-index: 10;
+
     width: $desktop-content-width;
     min-height: 165px;
   }
@@ -293,8 +314,8 @@
   .advert__header {
     width: 875px;
     min-height: 165px;
-    padding-top: 54px;
     margin-left: -14px;
+    padding-top: 54px;
 
     font-size: 53px;
     line-height: 57px;
@@ -302,8 +323,10 @@
 
   .advert__category {
     order: -1;
-    min-height: 155px;
+
     width: 175px;
+    min-height: 155px;
+
     padding-top: 64px;
     padding-left: 42px;
     padding-right: 50px;
@@ -313,6 +336,7 @@
 
   .advert__description {
     order: 2;
+
     width: 320px;
     min-height: 120px;
     margin-top: -478px;
@@ -339,22 +363,23 @@
   .advert__price {
     width: 291px;
     height: 150px;
-    padding-top: 109px;
-    padding-left: 0;
     margin-top: 0;
     margin-left: 1px;
+    padding-top: 109px;
+    padding-left: 0;
 
     font-size: 20px;
   }
 
   .advert__order {
     width: 293px;
-    padding-top: 14px;
     margin-top: 17px;
+    padding-top: 14px;
   }
 
   .advert__illustration {
     index: -10;
+
     width: 525px;
     height: 636px;
     margin-top: -164px;

@@ -2,6 +2,7 @@
   position: relative;
   padding: 0;
   margin: 0;
+
   line-height: 0;
 }
 
@@ -10,6 +11,7 @@
   height: 150px;
   padding: 0;
   margin: 0;
+
   line-height: 0;
 }
 
@@ -22,11 +24,13 @@
   position: absolute;
   top: 51%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+
   background-color: transparent;
   border: none;
-  outline: none;
+  outline: transparent;
   cursor: pointer;
+
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .video-block__button:hover .video-block__svg {
@@ -35,8 +39,9 @@
 }
 
 .video-block__button:active .video-block__svg {
-  transform: scale(0.8);
   fill: #d0f1ea;
+
+  transform: scale(0.8);
   transition: 0.2s linear 0s;
 }
 
@@ -46,6 +51,7 @@
   height: 455px;
   padding: 0;
   margin: 0;
+
   line-height: 0;
 }
 
@@ -66,6 +72,7 @@
    height: 455px;
    padding: 0;
    margin: 0;
+
    line-height: 0;
 }
 

@@ -2,8 +2,8 @@
   display: block;
   box-sizing: border-box;
   width: 320px;
-  padding: 0;
   margin: 0 auto;
+  padding: 0;
 
   background-color: $white;
 }
@@ -20,10 +20,11 @@
 
 .color__legend {
   position: relative;
-  padding: 0;
+
   margin: 0;
   margin-top: 9px;
   margin-bottom: 25px;
+  padding: 0;
 
   font-family: $default-font;
   font-weight: 700;
@@ -36,18 +37,21 @@
 
 .color__legend::after {
   content: "";
+
   position: absolute;
+  top: 50%;
+  right: 0;
+
   display: block;
   width: 198px;
   height: 1px;
-  top: 50%;
-  right: 0;
+
   background-color: #62d1ba;
 }
 
 .color__list {
-  padding:  0;
   margin: 0;
+  padding:  0;
 
   list-style-type: none;
 }
@@ -61,15 +65,17 @@
   box-sizing: border-box;
   width: 260px;
   height: 61px;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .color__check + .color__descr {
-  display: block;
   position: relative;
+
+  display: block;
   padding-left: 63.5px;
   padding-top: 10.5px;
+
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
@@ -81,13 +87,15 @@
 
 .color__check + .color__descr::before {
   content: "";
-  display: block;
+
   position: absolute;
+  left: 0;
+  top: 0;
+
+  display: block;
   box-sizing: border-box;
   width: 40px;
   height: 39px;
-  left: 0;
-  top: 0;
 
   background-color: $white;
   border: 2px solid $gray;
@@ -95,13 +103,15 @@
 
 .color__check + .color__descr::after {
   content: "";
-  display: none;
+
   position: absolute;
+  left: 5px;
+  top: 7px;
+
+  display: none;
   box-sizing: border-box;
   width: 30px;
   height: 23px;
-  left: 5px;
-  top: 7px;
 
   background: url("../img/icon-tick.svg") no-repeat;
 }
@@ -131,6 +141,7 @@
     width: 100%;
     padding-top: 50px;
     padding-bottom: 26px;
+
     background-color: #f1f1f1;
   }
 
@@ -138,6 +149,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     width: $tablet-content-width;
     margin-left: auto;
     margin-right: auto;
@@ -147,8 +159,8 @@
     box-sizing: border-box;
     width: 167px;
     min-height: 152px;
-    padding: 0;
     margin: 0;
+    padding: 0;
     padding-top: 17px;
     padding-left: 2px;
 
@@ -164,6 +176,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     box-sizing: border-box;
     width: 501px;
     min-height: 152px;
@@ -203,18 +216,21 @@
   }
 
   .color__check + .color__descr::before {
-    width: 54px;
-    height: 52px;
     top: 0.5px;
     left: 0.5px;
+
+    width: 54px;
+    height: 52px;
+
     background-color: #f1f1f1;
   }
 
   .color__check + .color__descr::after {
-    width: 40px;
-    height: 33px;
     left: 11px;
     top: 16.5px;
+
+    width: 40px;
+    height: 33px;
   }
 }
 

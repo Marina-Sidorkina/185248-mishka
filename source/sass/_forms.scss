@@ -59,11 +59,12 @@
   border: 2px solid $gray;
   background-color: $white;
   cursor: pointer;
-  outline: none;
+  outline: transparent;
 }
 
 .forms__button:hover {
   color: $white;
+
   background-color: $gray;
 }
 
@@ -73,6 +74,7 @@
 то есть как и у ховера, но визуально явно светлей*/
 .forms__button:active {
   color: #8d8d8d;
+
   background-color: $gray;
   opacity: 0.9;
 }
@@ -93,6 +95,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     width: $tablet-content-width;
     margin-left: auto;
     margin-right: auto;
@@ -100,15 +103,16 @@
 
   .forms__note {
     order: 1;
+
     width: 302px;
     height: 52px;
     margin: 0;
+    margin-right: -2px;
     padding: 0;
     padding-top: 9px;
 
     font-size: 17px;
     line-height: 30px;
-    margin-right: -2px;
   }
 
   .forms__button {

@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   box-sizing: border-box;
   width: 260px;
   padding: 0;
@@ -47,7 +48,9 @@
   width: 260px;
   height: 195px;
   font-size: 0;
+
   line-height: 0;
+
   background-color: #eae9e7;
 }
 
@@ -60,6 +63,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   box-sizing: border-box;
   width: 260px;
   min-height: 105px;
@@ -110,6 +114,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
   box-sizing: border-box;
   width: 260px;
   height: 72.5px;
@@ -121,6 +126,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
   box-sizing: border-box;
   width: 207px;
   height: 72.5px;
@@ -139,6 +145,7 @@
 
 .product-item__svg {
   margin-right: 2px;
+
   fill: #cccccc;
 }
 
@@ -167,6 +174,7 @@
 
   .product-item__container {
     align-items: flex-start;
+
     box-sizing: border-box;
     width: 100%;
     height: 334px;
@@ -186,6 +194,7 @@
     height: 334px;
     font-size: 0;
     line-height: 0;
+
     background-color: #eae9e7;
   }
 
@@ -195,10 +204,11 @@
   }
 
   .product-item__description {
+    order: 1;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    order: 1;
+
     box-sizing: border-box;
     width: 334px;
     min-height: 260px;
@@ -211,12 +221,14 @@
 
   .product-item__title {
     width: 235px;
+
     font-size: 20px;
     line-height: 24px;
   }
 
   .product-item__property {
     width: 220px;
+
     font-size: 15px;
     padding-top: 6px;
     line-height: 30px;
@@ -239,13 +251,15 @@
 
   .product-item__spec-container {
     width: 268px;
+
     border: none;
   }
 
   .product-item__price {
+    margin-left: -1px;
+
     font-size: 17px;
     line-height: 24px;
-    margin-left: -1px;
   }
 
   .product-item__svg {
@@ -279,14 +293,17 @@
     box-sizing: border-box;
     width: 315px;
     height: 462px;
+
     background-color: #dedede;
   }
 
   .product-item__picture {
     width: 316px;
     height: 462px;
+
     font-size: 0;
     line-height: 0;
+
     background-color: #eae9e7;
   }
 
@@ -298,6 +315,7 @@
   .product-item__description {
     justify-content: flex-start;
     align-items: flex-start;
+
     box-sizing: border-box;
     width: 315px;
     height: 124px;
@@ -309,12 +327,14 @@
 
   .product-item__title {
     width: 240px;
+
     font-size: 20px;
     line-height: 24px;
   }
 
   .product-item__property {
     width: 230px;
+
     font-size: 15px;
     line-height: 30px;
   }

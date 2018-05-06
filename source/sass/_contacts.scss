@@ -36,11 +36,11 @@
 
 .contacts__title {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   min-height: 90px;
-  padding-top: 35.5px;
+  margin: 0;
   margin-left: -1px;
+  padding: 0;
+  padding-top: 35.5px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -52,12 +52,13 @@
 .contacts__list {
   box-sizing: border-box;
   width: 260px;
-  padding: 0;
   margin: 0;
   margin-left: -1px;
+  padding: 0;
 
   font-size: 15px;
   line-height: 30px;
+
   border-collapse: collapse;
   border: none;
 }
@@ -97,12 +98,15 @@
 
 .contacts__value--email::after {
   content: "";
+
   position: absolute;
+  top: 24px;
+	left: 0;
+
   width: 100%;
   height: 1px;
+
   background-color: #46c1ae;
-	top: 24px;
-	left: 0;
 }
 
 .contacts__cat {
@@ -113,11 +117,11 @@
 .contacts__map {
   display: flex;
   box-sizing: border-box;
-  height: 457px;
   width: 100%;
-  padding: 0;
+  height: 457px;
   margin: 0 auto;
   margin-top: 36px;
+  padding: 0;
 
   line-height: 0;
   background-color: #dfdfdf;
@@ -125,12 +129,14 @@
 
 .contacts__container--map {
   position: relative;
+
   width: 320px;
   height: 457px;
   margin: 0;
-  padding: 0;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
+
   background-image: url("../img/map-mobile@1x.jpg") no-repeat center;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -141,33 +147,37 @@
 
 .contacts__container--map::before {
   content:"";
+
   position: absolute;
+  top: 145px;
+  right: 115px;
+
   display: block;
   width: 67px;
   height: 100px;
-  top: 145px;
-  right: 115px;
+
   background: transparent url("../img/icon-map-pin.svg") repeat-x;
 }
 
 .google-map {
   position: absolute;
+  z-index: 10;
+
   display: block;
   width: 100%;
   height: 457px;
   margin: 0;
   padding: 0;
-  z-index: 10;
 }
 
 .contacts__write-us-link {
   box-sizing: border-box;
   width: 260px;
   height: 52px;
-  padding-top: 13.5px;
   margin-top: 39px;
   margin-bottom: 40px;
   margin-left: 0.5px;
+  padding-top: 13.5px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -217,6 +227,7 @@
 
   .contacts__title {
     position: relative;
+
     box-sizing: border-box;
     width: 100%;
     height: 81px;
@@ -229,20 +240,23 @@
 
   .contacts__title::after {
     content: "";
+
     position: absolute;
+    top: 0;
+    right: -2px;
+
     display: block;
     width: 47px;
     height: 81px;
     background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
-    top: 0;
-    right: -2px;
   }
   .contacts__container--link {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     height: 165px;
   }
 
@@ -256,9 +270,11 @@
 
   .contacts__map {
     width: 100%;
-    padding: 0;
     margin: 0 auto;
+    padding: 0;
+
     line-height: 0;
+
     background-color: #dfdfdf;
   }
 
@@ -277,6 +293,7 @@
 
   .contacts__container--map::before {
     content:"";
+
     top: 139px;
     right: 338px;
   }
@@ -296,6 +313,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+
     box-sizing: border-box;
     width: 100%;
     min-height: 170px;
@@ -310,6 +328,7 @@
 
   .contacts__row {
     display: flex;
+
     width: 334px;
   }
 
@@ -330,11 +349,13 @@
   .contacts__container--general {
     display: flex;
     flex-direction: column;
+
     width: $desktop-content-width;
   }
 
   .contacts__container--main {
     order: 1;
+
     width: 351px;
     margin: 0;
   }
@@ -357,6 +378,7 @@
 
   .contacts__map {
     order: 0;
+
     width: 525px;
     height: 457px;
     margin: 0;
@@ -366,6 +388,7 @@
   .contacts__container--map {
     width: 525px;
     height: 457px;
+
     background-image: url("../img/map-desktop@1x.jpg") no-repeat center;
     background-size: 525px 457px;
 
@@ -387,6 +410,7 @@
 
   .contacts__list {
     order: 2;
+
     box-sizing:border-box;
     width: 351px;
     min-height: 230px;
@@ -416,6 +440,7 @@
   .contacts__container--link {
     justify-content: flex-start;
     order: 3;
+
     width: 351px;
     height: 52px;
     margin: 0;

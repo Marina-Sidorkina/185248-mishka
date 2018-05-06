@@ -2,8 +2,8 @@
   box-sizing: border-box;
   width: 320px;
   height: 79px;
-  padding: 0;
   margin: 0;
+  padding: 0;
 
   font-size: 0;
   line-height: 0;
@@ -15,8 +15,8 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  box-sizing: border-box;
 
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   width: 260px;
@@ -29,6 +29,7 @@
   width: 86px;
   height: 35px;
   margin-right: 66.5px;
+
   cursor: pointer;
 }
 
@@ -73,7 +74,9 @@
 .extra__button {
   width: 21px;
   height: 15px;
+
   font-size: 0;
+
   border: 0;
   cursor: pointer;
 	background-color: red;
@@ -84,7 +87,9 @@
 .extra__button--opened {
   width: 22px;
   height: 22px;
+
   font-size: 0;
+
   border: 0;
   cursor: pointer;
   background: url("../img/icon-menu-close.svg") no-repeat;
@@ -109,6 +114,7 @@
   .extra__container {
     justify-content: flex-start;
     align-items: flex-start;
+
     width: 321px;
     height: 89px;
     padding-top: 22px;
@@ -126,10 +132,10 @@
 
 @media (min-width: $desktop-width) {
   .extra {
+    order: 1;
     box-sizing: border-box;
     width: 260px;
     height: 89px;
-    order: 1;
   }
 
   .extra__container {

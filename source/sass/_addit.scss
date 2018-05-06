@@ -2,12 +2,14 @@
   display: block;
   box-sizing: border-box;
   width: 320px;
+
   background-color: $white;
 }
 
 .addit__container {
   display: flex;
   flex-direction: column;
+
   box-sizing: border-box;
   width: 260px;
   margin: 0 auto;
@@ -15,10 +17,11 @@
 
 .addit__legend {
   position: relative;
-  padding: 0;
+
   margin: 0;
   margin-top: 8.5px;
   margin-bottom: 4px;
+  padding: 0;
 
   font-family: $default-font;
   font-weight: 700;
@@ -31,12 +34,15 @@
 
 .addit__legend::after {
   content: "";
+
   position: absolute;
+
   display: block;
   width: 198px;
   height: 1px;
   top: 50%;
   right: 0;
+
   background-color: #62d1ba;
 }
 
@@ -75,6 +81,7 @@
   .addit__container {
     display: flex;
     flex-direction: row;
+
     width: $tablet-content-width;
     min-height: 144px;
     padding-left: 2px;
@@ -98,10 +105,10 @@
     width: 501px;
     min-height: 142px;
     margin: 0;
+    margin-left: 2px;
     padding: 0;
     padding-top: 12px;
     padding-left: 14px;
-    margin-left: 2px;
 
     font-size: 19px;
     line-height: 19px;

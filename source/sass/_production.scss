@@ -11,6 +11,7 @@
 .production__container {
   display: flex;
   flex-direction: column;
+
   box-sizing: border-box;
   width: 260px;
   padding: 0;
@@ -32,6 +33,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+
   box-sizing: border-box;
   width: 260px;
   height: 95px;
@@ -42,8 +44,10 @@
 
 .production__title {
   position: relative;
+
   width: 130px;
   margin-left: 90px;
+
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
@@ -53,12 +57,15 @@
 
 .production__title::before {
   content: "";
+
   position: absolute;
+  top: 7px;
+  left: -56px;
+
   display: block;
   width: 32px;
   height: 32px;
-  top: 7px;
-  left: -56px;
+
   background-image: url("../img/icon-video.svg");
 }
 
@@ -94,12 +101,14 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+
   border: 2px solid $gray;;
   cursor: pointer;
 }
 
 .production__link:hover {
   color: $white;
+
   background-color: $gray;
 }
 
@@ -109,6 +118,7 @@
 то есть как и у ховера, но визуально явно светлей*/
 .production__link:active {
   color: #8d8d8d;
+
   background-color: $gray;
   opacity: 0.9;
 }
@@ -123,6 +133,7 @@
   .production__container {
     display: flex;
     flex-direction: column;
+
     width: $tablet-content-width;
     margin-left: auto;
     margin-right: auto;
@@ -130,8 +141,10 @@
 
   .production__video {
     order: 0;
+
     width: 668px;
     height: 455px;
+
     background-color: #c1bdbe;
   }
 
@@ -148,6 +161,7 @@
 
   .production__title {
     position: relative;
+
     width: 586px;
     padding-left: 66px;
     padding-top: 16px;
@@ -159,17 +173,21 @@
 
   .production__title::before {
     content: "";
+
     position: absolute;
+    top: 11px;
+    left: 1px;
+
     display: block;
     width: 32px;
     height: 32px;
-    top: 11px;
-    left: 1px;
+
     background-image: url("../img/icon-video.svg");
   }
 
   .production__description {
     order: 2;
+
     width: 586px;
     min-height:  95px;
     margin-left: auto;
@@ -182,6 +200,7 @@
 
   .production__link {
     order: 3;
+
     width: 584px;
     height: 52px;
     margin-left: 42px;
