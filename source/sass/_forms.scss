@@ -17,7 +17,7 @@
   background-color: $white;
 }
 
-.forms__container-2 {
+.forms__container {
   display: flex;
   flex-direction: column;
 
@@ -29,10 +29,10 @@
 
 .forms__note {
   box-sizing: border-box;
-  height: 63px;
+  min-height: 63px;
   padding: 0;
   margin: 0;
-  padding-top: 19px;
+  padding-top: 15px;
 
   font-family: $default-font;
   font-weight: 400;
@@ -45,7 +45,7 @@
   box-sizing: border-box;
   width: 260px;
   height: 52px;
-  margin-bottom: 56px;
+  margin-bottom: 55px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -89,7 +89,7 @@
     margin-bottom: 50px;
   }
 
-  .forms__container-2 {
+  .forms__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -119,7 +119,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .forms__container-2 {
+  .forms__container {
     width: $desktop-content-width;
   }
 

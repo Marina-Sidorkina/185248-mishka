@@ -22,8 +22,8 @@
   position: relative;
   padding: 0;
   margin: 0;
-  margin-top: 11px;
-  margin-bottom: 26px;
+  margin-top: 9px;
+  margin-bottom: 25px;
 
   font-family: $default-font;
   font-weight: 700;
@@ -68,8 +68,8 @@
 .color__check + .color__descr {
   display: block;
   position: relative;
-  padding-left: 64px;
-  padding-top: 10px;
+  padding-left: 63.5px;
+  padding-top: 10.5px;
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
@@ -85,12 +85,12 @@
   position: absolute;
   box-sizing: border-box;
   width: 40px;
-  height: 40px;
+  height: 39px;
   left: 0;
   top: 0;
 
   background-color: $white;
-  border: 1px solid $gray;
+  border: 2px solid $gray;
 }
 
 .color__check + .color__descr::after {

@@ -28,7 +28,7 @@
 .catalog-header__title {
   box-sizing: border-box;
   width: 240px;
-  height: 30px;
+  min-height: 30px;
 
   font-family: $default-font;
   font-weight: 700;
