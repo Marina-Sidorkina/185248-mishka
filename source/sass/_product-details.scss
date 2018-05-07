@@ -28,6 +28,7 @@
   padding: 8px 0 0 18px;
   vertical-align: top;
 }
+
 @media (min-width: $tablet-width) {
   .product-details {
     box-sizing: border-box;
@@ -58,6 +59,7 @@
     padding-top: 16px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .product-details {
     width: 291px;

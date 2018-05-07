@@ -20,6 +20,7 @@
 .page-footer__logo {
   display: none;
 }
+
 @media (min-width: $tablet-width) {
   .page-footer {
     width: 100%;
@@ -67,6 +68,7 @@
     fill: #231f20;
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-footer {
     width: 100%;

@@ -73,6 +73,7 @@
 .tel__input:focus + .tel__svg {
   fill: #62d1ba;
 }
+
 @media (min-width: $tablet-width) {
   .tel {
     width: 100%;
@@ -115,6 +116,7 @@
     top: 35px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .tel__container {
     width: $desktop-content-width;

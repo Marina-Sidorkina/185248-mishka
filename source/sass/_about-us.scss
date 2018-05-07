@@ -135,6 +135,7 @@
   height: 32px;
   background: transparent url("../img/icon-feature-gift.svg") no-repeat;
 }
+
 @media (min-width: $tablet-width) {
   .about-us {
     width: 100%;
@@ -223,6 +224,7 @@
     left: 4px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .about-us__container {
     width: 700px;

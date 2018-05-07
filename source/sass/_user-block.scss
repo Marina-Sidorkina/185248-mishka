@@ -67,6 +67,7 @@
 .user-block__link:active .user-block__svg {
   fill: #d0f1ea;
 }
+
 @media (min-width: $tablet-width) {
   .user-block {
     order: 1;
@@ -128,6 +129,7 @@
     display: none;
   }
 }
+
 @media (min-width: $desktop-width) {
   .user-block {
     display: block;

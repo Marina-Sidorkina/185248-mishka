@@ -25,6 +25,7 @@
   line-height: 24px;
   color: $gray;
 }
+
 @media (min-width: $tablet-width) {
   .forms-description {
     width: 100%;
@@ -49,6 +50,7 @@
     line-height: 30px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .forms-description__container {
     width: $desktop-content-width;

@@ -115,6 +115,7 @@
 .color__check:checked:active + .color__descr::before {
   border: 1px solid #c7c7c7;
 }
+
 @media (min-width: $tablet-width) {
   .color {
     width: 100%;
@@ -201,6 +202,7 @@
     height: 33px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .color {
     width: 100%;

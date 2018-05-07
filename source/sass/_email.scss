@@ -73,6 +73,7 @@
 .email__input:focus + .email__svg {
   fill: #62d1ba;
 }
+
 @media (min-width: $tablet-width) {
   .email {
     box-sizing: border-box;
@@ -118,6 +119,7 @@
     top: 34px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .email__container {
     width: $desktop-content-width;

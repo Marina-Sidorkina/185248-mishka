@@ -44,7 +44,8 @@
 .copyright__link:active .copyright__text {
   color: #bfbfbf;
 }
-@media (min-width:$tablet-width) {
+
+@media (min-width: $tablet-width) {
   .copyright {
     width: 190px;
     margin-top: 9px;

@@ -25,6 +25,7 @@
   margin: 0;
   padding: 0;
 }
+
 @media (min-width: $tablet-width) {
   .product-list {
     width: 100%;
@@ -37,6 +38,7 @@
     padding-left: 2px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .product-list__container {
     flex-direction: row;

@@ -42,6 +42,7 @@
   line-height: 24px;
   color: $gray;
 }
+
 @media (min-width: $tablet-width) {
   .page-header {
     width: 100%;
@@ -62,6 +63,7 @@
     margin-left: auto;
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-header {
     width: 100%;

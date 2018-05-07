@@ -70,6 +70,7 @@
   background-color: $gray;
   opacity: 0.9;
 }
+
 @media (min-width: $tablet-width) {
   .forms__list {
     width: 100%;
@@ -111,6 +112,7 @@
     text-align: left;
   }
 }
+
 @media (min-width: $desktop-width) {
   .forms__container {
     width: $desktop-content-width;

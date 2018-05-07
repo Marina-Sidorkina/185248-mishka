@@ -57,6 +57,7 @@
   color: $gray;
   border: 2px solid #62d1ba;
 }
+
 @media (min-width: $tablet-width) {
   .addit {
     box-sizing: border-box;
@@ -94,6 +95,7 @@
     line-height: 19px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .addit {
     margin-bottom: 47px;

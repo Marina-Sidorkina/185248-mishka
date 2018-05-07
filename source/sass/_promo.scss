@@ -26,6 +26,7 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: -157px -18.5px;
+
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
     background-size: 575px 373px;
@@ -129,6 +130,7 @@
   width: 89px;
   margin-top: -6px;
 }
+
 @media (min-width: $tablet-width) {
   .promo {
     box-sizing: border-box;
@@ -167,6 +169,7 @@
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: 1150px 746px;
+
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
       background-size: 1150px 746px;
@@ -212,15 +215,6 @@
     padding-top: 34px;
   }
 
-  .promo__wrapper--interior::before {
-    margin-right: 1.5px;
-  }
-
-  .promo__wrapper--toy::before {
-    margin-right: -1px;
-    margin-top: 1.5px;
-  }
-
   .promo__item {
     width: 334px;
     height: 118px;
@@ -234,11 +228,14 @@
   .promo__wrapper--interior::before {
     top: 30px;
     right: 35px;
+    margin-right: 1.5px;
   }
 
   .promo__wrapper--toy::before {
     top: 30px;
     right: 35px;
+    margin-right: -1px;
+    margin-top: 1.5px;
   }
 
   .promo__title--interior {
@@ -254,6 +251,7 @@
     line-height: 30px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .promo {
     margin-top: -66.5px;
@@ -261,12 +259,12 @@
 
   .promo__description {
     width: $desktop-content-width;
-    width: 1050px;
     min-height: 628px;
     padding-top: 18px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: 1150px 746px;
+
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
       background-size: 1150px 746px;

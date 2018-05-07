@@ -164,6 +164,7 @@
   background-color: $gray;
   opacity: 0.9;
 }
+
 @media (min-width: $tablet-width) {
   .feedback {
     width: $tablet-width;
@@ -181,6 +182,7 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: top left;
+
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/review@2x.jpg");
       background-size: 350px 457px;
@@ -192,7 +194,6 @@
     width: 100%;
     height: 17px;
     background: url("../img/bg-zigzag-line.svg") repeat-x;
-    background-size: auto 6px;
     background-position: 0 0;
     background-size: 768px 17px;
     transform: rotate(180deg);
@@ -266,6 +267,7 @@
     border: none;
   }
 }
+
 @media (min-width: $desktop-width) {
   .feedback {
     width: $desktop-content-width;
@@ -278,7 +280,6 @@
     width: 100%;
     height: 26px;
     background: url("../img/bg-zigzag-line.svg") repeat-x;
-    background-size: auto 26px;
     background-position: 0 0;
     background-size: 1050px 26px;
     transform: rotate(180deg);

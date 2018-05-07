@@ -30,10 +30,6 @@
   cursor: pointer;
 }
 
-.extra__link--index {
-  cursor: default;
-}
-
 .extra__link:hover {
   opacity: 0.6;
 }
@@ -44,6 +40,7 @@
 
 .extra__link--index {
   opacity: 1;
+  cursor: default;
 }
 
 .extra__link--index:hover {
@@ -64,19 +61,13 @@
 
 .extra__button {
   width: 21px;
-  height: 14px;
-  outline: none;
-}
-
-.extra__button {
-  width: 21px;
   height: 15px;
   font-size: 0;
   border: 0;
   cursor: pointer;
-  background-color: red;
   background: url("../img/icon-menu-open.svg") no-repeat;
   background-position: center;
+  outline: none;
 }
 
 .extra__button--opened {
@@ -92,6 +83,7 @@
 .extra__button--opened .page-body {
   margin-top: 395px;
 }
+
 @media (min-width: $tablet-width) {
   .extra {
     box-sizing: border-box;
@@ -121,6 +113,7 @@
     margin-left: -0.5px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .extra {
     order: 1;

@@ -125,6 +125,7 @@
 .type__radio:checked:active + .type__descr::after {
   display: none;
 }
+
 @media (min-width: $tablet-width) {
   .type {
     width: 100%;
@@ -204,6 +205,7 @@
     height: 20.5px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .type {
     width: 100%;

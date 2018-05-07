@@ -61,6 +61,7 @@
 .navigation__link--form:active {
   color: $black;
 }
+
 @media (min-width: $tablet-width) {
   .navigation {
     display: flex;
@@ -93,6 +94,7 @@
     border: none;
   }
 }
+
 @media (min-width: $desktop-width) {
   .navigation {
     order: 0;

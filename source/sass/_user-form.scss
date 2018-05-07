@@ -55,13 +55,6 @@
   height: 92px;
 }
 
-.user-form__item {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  height: 92px;
-}
-
 .user-form__label {
   font-family: $default-font;
   font-weight: 700;
@@ -90,6 +83,7 @@
   color: $gray;
   border-bottom: 2px solid #62d1ba;
 }
+
 @media (min-width: $tablet-width) {
   .user-form {
     width: 100%;
@@ -154,6 +148,7 @@
     width: 428px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .user-form {
     width: 100%;
