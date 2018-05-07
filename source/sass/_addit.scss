@@ -2,14 +2,12 @@
   display: block;
   box-sizing: border-box;
   width: 320px;
-
   background-color: $white;
 }
 
 .addit__container {
   display: flex;
   flex-direction: column;
-
   box-sizing: border-box;
   width: 260px;
   margin: 0 auto;
@@ -17,32 +15,24 @@
 
 .addit__legend {
   position: relative;
-
-  margin: 0;
-  margin-top: 8.5px;
-  margin-bottom: 4px;
+  margin: 8.5px 0 4px;
   padding: 0;
-
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
   line-height: 17px;
   color: $blue;
-
   text-transform: uppercase;
 }
 
 .addit__legend::after {
   content: "";
-
   position: absolute;
-
   display: block;
   width: 198px;
   height: 1px;
   top: 50%;
   right: 0;
-
   background-color: #62d1ba;
 }
 
@@ -51,12 +41,10 @@
   height: 142px;
   margin-top: 21px;
   padding: 15px;
-
   font-family: $default-font;
   font-size: 17px;
-  line-height:18px;
+  line-height: 18px;
   color: #d2d2d2;
-
   border: 2px solid $gray;
   outline: transparent;
 }
@@ -69,8 +57,6 @@
   color: $gray;
   border: 2px solid #62d1ba;
 }
-
-
 @media (min-width: $tablet-width) {
   .addit {
     box-sizing: border-box;
@@ -81,7 +67,6 @@
   .addit__container {
     display: flex;
     flex-direction: row;
-
     width: $tablet-content-width;
     min-height: 144px;
     padding-left: 2px;
@@ -92,8 +77,7 @@
     width: 165px;
     min-height: 144px;
     margin: 0;
-    padding: 0;
-    padding-top: 16px;
+    padding: 16px 0 0;
   }
 
   .addit__legend::after {
@@ -104,22 +88,16 @@
     box-sizing: border-box;
     width: 501px;
     min-height: 142px;
-    margin: 0;
-    margin-left: 2px;
-    padding: 0;
-    padding-top: 12px;
-    padding-left: 14px;
-
+    margin: 0 0 0 2px;
+    padding: 12px 0 0 14px;
     font-size: 19px;
     line-height: 19px;
   }
 }
-
 @media (min-width: $desktop-width) {
-
-   .addit {
-      margin-bottom: 47px;
-   }
+  .addit {
+    margin-bottom: 47px;
+  }
 
   .addit__container {
     width: $desktop-content-width;

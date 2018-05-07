@@ -2,35 +2,40 @@
   display: none;
   box-sizing: border-box;
   width: 320px;
-  height:340px;
+  height: 340px;
   padding: 0;
   margin: 0 auto;
-
-
   font-family: $default-font;
   font-weight: 400;
   color: $gray;
-
   background-color: $white;
   box-shadow: 0 6px 6px 0 #c6c6c6;
 }
-
 @keyframes show {
-  0% {transform: translateY(-2000px);}
-  70% {transform: translateY(10px);}
-  0% {transform: translateY(-10px);}
-  0% {transform: translateY(0);}
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(10px);
+  }
+
+  0% {
+    transform: translateY(-10px);
+  }
+
+  0% {
+    transform: translateY(0);
+  }
 }
 
 .modal--show {
   position: fixed;
   top: 50%;
   left: 50%;
-
   display: block;
   margin-top: -170px;
   margin-left: -160px;
-
   animation-name: show;
   animation-duration: 1s;
 }
@@ -38,7 +43,6 @@
 .modal__container {
   display: flex;
   flex-direction: column;
-
   box-sizing: border-box;
   width: 260px;
   margin-left: auto;
@@ -51,13 +55,11 @@
   width: 150px;
   height: 50px;
   margin: 0 auto;
-
   font-family: $default-font;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: $gray;
-
   text-transform: uppercase;
   text-align: center;
 }
@@ -69,15 +71,12 @@
 
 .modal__choice {
   width: 150px;
-  margin: 0 auto;
-  margin-top: 25px;
-
+  margin: 25px auto 0;
   font-family: $default-font;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
   color: $gray;
-
   text-align: center;
 }
 
@@ -86,7 +85,6 @@
   width: 260px;
   height: 52px;
   margin-top: 38px;
-
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
@@ -95,14 +93,13 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-
   background-color: $blue;
   border: none;
   cursor: pointer;
 }
-
 /*В стайлгайде нет состояний для этой кнопки. Сделала на своё усмотрение,
 чтобы хоть как-то интерактивность подчеркнуть. Если так нельзя - уберу*/
+
 .modal__button:hover {
   opacity: 0.9;
 }

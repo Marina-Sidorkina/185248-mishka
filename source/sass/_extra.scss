@@ -4,7 +4,6 @@
   height: 79px;
   margin: 0;
   padding: 0;
-
   font-size: 0;
   line-height: 0;
   color: $black;
@@ -15,7 +14,6 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -29,7 +27,6 @@
   width: 86px;
   height: 35px;
   margin-right: 66.5px;
-
   cursor: pointer;
 }
 
@@ -64,22 +61,20 @@
   height: 35px;
   margin-top: -1px;
 }
+
 .extra__button {
   width: 21px;
   height: 14px;
-
   outline: none;
 }
 
 .extra__button {
   width: 21px;
   height: 15px;
-
   font-size: 0;
-
   border: 0;
   cursor: pointer;
-	background-color: red;
+  background-color: red;
   background: url("../img/icon-menu-open.svg") no-repeat;
   background-position: center;
 }
@@ -87,9 +82,7 @@
 .extra__button--opened {
   width: 22px;
   height: 22px;
-
   font-size: 0;
-
   border: 0;
   cursor: pointer;
   background: url("../img/icon-menu-close.svg") no-repeat;
@@ -99,26 +92,25 @@
 .extra__button--opened .page-body {
   margin-top: 395px;
 }
-
 @media (min-width: $tablet-width) {
   .extra {
     box-sizing: border-box;
     width: 321px;
     height: 89px;
     order: 0;
-
     border-top: none;
     border-left: none;
     border-bottom: none;
   }
+
   .extra__container {
     justify-content: flex-start;
     align-items: flex-start;
-
     width: 321px;
     height: 89px;
     padding-top: 22px;
   }
+
   .extra__dropdown {
     display: none;
   }
@@ -129,7 +121,6 @@
     margin-left: -0.5px;
   }
 }
-
 @media (min-width: $desktop-width) {
   .extra {
     order: 1;

@@ -2,18 +2,15 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-
   font-family: $default-font;
   font-weight: 400;
   color: $gray;
-
   background-color: #f1f1f1;
 }
 
 .page-footer__container {
   display: flex;
   flex-direction: column;
-
   box-sizing: border-box;
   width: 260px;
   margin-left: auto;
@@ -23,7 +20,6 @@
 .page-footer__logo {
   display: none;
 }
-
 @media (min-width: $tablet-width) {
   .page-footer {
     width: 100%;
@@ -35,7 +31,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     width: $tablet-content-width;
     height: 143px;
   }
@@ -44,12 +39,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
     width: 102px;
     height: 35px;
     margin-top: -8px;
     margin-left: 2px;
-
     fill: #231f20;
     cursor: pointer;
   }
@@ -74,7 +67,6 @@
     fill: #231f20;
   }
 }
-
 @media (min-width: $desktop-width) {
   .page-footer {
     width: 100%;

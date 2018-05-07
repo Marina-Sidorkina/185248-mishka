@@ -3,7 +3,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
   box-sizing: border-box;
   height: 79px;
 }
@@ -14,16 +13,13 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-
   height: 34px;
   margin-top: -8.5px;
-
   text-decoration: none;
 }
 
 .copyright__text {
   margin-right: 30px;
-
   font-family: $default-font;
   font-size: 19px;
   line-height: 19px;
@@ -34,7 +30,6 @@
 .copyright__svg {
   margin-top: 7px;
   margin-right: 0.5px;
-
   fill: $blue;
 }
 
@@ -49,9 +44,6 @@
 .copyright__link:active .copyright__text {
   color: #bfbfbf;
 }
-
-
-
 @media (min-width:$tablet-width) {
   .copyright {
     width: 190px;

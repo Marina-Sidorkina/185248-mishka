@@ -1,11 +1,8 @@
 .navigation {
-  order: -2;
-
   display: none;
   width: 320px;
   padding: 0;
   margin: 0;
-
   line-height: 0;
   background-color: $white;
 }
@@ -16,16 +13,14 @@
 
 .navigation__list {
   display: flex;
-  flex-direction:  row;
+  flex-direction: row;
   flex-wrap: wrap;
-
   padding: 0;
   margin: 0;
-
   list-style-type: none;
 }
 
-.navigation__item  {
+.navigation__item {
   box-sizing: border-box;
   width: 320px;
   height: 79px;
@@ -39,17 +34,13 @@
   width: 320px;
   height: 79px;
   margin: 0;
-  padding: 0;
-  padding-top: 30px;
-  padding-left: 77px;
-
+  padding: 30px 0 0 77px;
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: $black;
   text-decoration: none;
-
   border-bottom: 1px solid $gray--light;
 }
 
@@ -61,22 +52,19 @@
   color: #cecece;
 }
 
-.navigation__link--form:hover,
-.navigation__link--catalog:hover {
+.navigation__link--catalog:hover,
+.navigation__link--form:hover {
   color: $black;
 }
 
-.navigation__link--form:active,
-.navigation__link--catalog:active {
+.navigation__link--catalog:active,
+.navigation__link--form:active {
   color: $black;
 }
-
-
 @media (min-width: $tablet-width) {
   .navigation {
     display: flex;
     order: 2;
-
     box-sizing: border-box;
     width: 405px;
     min-height: 65px;
@@ -101,17 +89,13 @@
     height: 65px;
     padding-left: 1px;
     padding-top: 17.5px;
-
     font-size: 15px;
-
     border: none;
   }
 }
-
 @media (min-width: $desktop-width) {
   .navigation {
     order: 0;
-
     width: 440px;
     min-height: 89px;
   }
@@ -131,7 +115,6 @@
     height: 89px;
     padding-top: 32px;
     padding-left: 0;
-
     font-size: 17px;
     border: none;
   }
@@ -139,7 +122,6 @@
   .navigation__item--border {
     width: 185px;
     margin-right: 35px;
-
     border-right: 1px solid $gray--light;
   }
 }

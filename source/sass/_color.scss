@@ -4,14 +4,12 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
-
   background-color: $white;
 }
 
 .color__container {
   display: flex;
   flex-direction: column;
-
   box-sizing: border-box;
   width: 260px;
   margin-left: auto;
@@ -20,39 +18,30 @@
 
 .color__legend {
   position: relative;
-
-  margin: 0;
-  margin-top: 9px;
-  margin-bottom: 25px;
+  margin: 9px 0 25px;
   padding: 0;
-
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
   line-height: 17px;
   color: $blue;
-
   text-transform: uppercase;
 }
 
 .color__legend::after {
   content: "";
-
   position: absolute;
   top: 50%;
   right: 0;
-
   display: block;
   width: 198px;
   height: 1px;
-
   background-color: #62d1ba;
 }
 
 .color__list {
   margin: 0;
-  padding:  0;
-
+  padding: 0;
   list-style-type: none;
 }
 
@@ -71,48 +60,39 @@
 
 .color__check + .color__descr {
   position: relative;
-
   display: block;
   padding-left: 63.5px;
   padding-top: 10.5px;
-
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: $black;
-
   cursor: pointer;
 }
 
 .color__check + .color__descr::before {
   content: "";
-
   position: absolute;
   left: 0;
   top: 0;
-
   display: block;
   box-sizing: border-box;
   width: 40px;
   height: 39px;
-
   background-color: $white;
   border: 2px solid $gray;
 }
 
 .color__check + .color__descr::after {
   content: "";
-
   position: absolute;
   left: 5px;
   top: 7px;
-
   display: none;
   box-sizing: border-box;
   width: 30px;
   height: 23px;
-
   background: url("../img/icon-tick.svg") no-repeat;
 }
 
@@ -135,13 +115,11 @@
 .color__check:checked:active + .color__descr::before {
   border: 1px solid #c7c7c7;
 }
-
 @media (min-width: $tablet-width) {
   .color {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 26px;
-
     background-color: #f1f1f1;
   }
 
@@ -149,7 +127,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
     width: $tablet-content-width;
     margin-left: auto;
     margin-right: auto;
@@ -160,23 +137,19 @@
     width: 167px;
     min-height: 152px;
     margin: 0;
-    padding: 0;
-    padding-top: 17px;
-    padding-left: 2px;
-
+    padding: 17px 0 0 2px;
     font-size: 17;
     line-height: 17px;
   }
 
   .color__legend::after {
-  display: none;
+    display: none;
   }
 
   .color__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
     box-sizing: border-box;
     width: 501px;
     min-height: 152px;
@@ -200,7 +173,6 @@
     height: 76px;
     margin: 0;
     padding: 0;
-
     font-size: 19px;
     line-height: 19px;
   }
@@ -210,7 +182,6 @@
     margin: 0;
     padding-left: 81px;
     padding-top: 14.5px;
-
     font-size: 19px;
     line-height: 19px;
   }
@@ -218,27 +189,24 @@
   .color__check + .color__descr::before {
     top: 0.5px;
     left: 0.5px;
-
     width: 54px;
     height: 52px;
-
     background-color: #f1f1f1;
   }
 
   .color__check + .color__descr::after {
     left: 11px;
     top: 16.5px;
-
     width: 40px;
     height: 33px;
   }
 }
-
 @media (min-width: $desktop-width) {
   .color {
     width: 100%;
     padding-bottom: 25px;
   }
+
   .color__container {
     width: $desktop-content-width;
   }

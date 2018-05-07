@@ -1,7 +1,6 @@
 @import "normalize";
 @import "fonts";
 @import "variables";
-@import "mixin";
 @import "visually-hidden";
 
 @import "page-body";
@@ -11,12 +10,12 @@
 @import "user-block";
 @import "extra-navigation";
 
-@import "index";
 @import "promo";
 @import "advert";
 @import "about-us";
 @import "feedback";
 @import "contacts";
+@import "google-map";
 
 @import "page-footer";
 @import "social";
@@ -25,7 +24,6 @@
 @import "modal";
 @import "size";
 
-@import "catalog";
 @import "catalog-header";
 @import "product-list";
 @import "product-item";

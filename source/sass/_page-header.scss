@@ -4,13 +4,11 @@
   width: 320px;
   padding: 0;
   margin: 0 auto;
-
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: $black;
-
   background-color: $white;
 }
 
@@ -18,14 +16,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
   box-sizing: border-box;
   min-height: 80px;
   padding: 0;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-
+  margin: 0 auto;
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
@@ -35,7 +29,6 @@
 
 .page-header__delivery {
   order: 4;
-
   display: none;
   box-sizing: border-box;
   width: 232px;
@@ -43,14 +36,12 @@
   padding: 0;
   margin: 0;
   padding-top: 30px;
-
   font-family: $default-font;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: $gray;
 }
-
 @media (min-width: $tablet-width) {
   .page-header {
     width: 100%;
@@ -62,7 +53,6 @@
 
   .page-header__delivery {
     order: 4;
-
     display: block;
     box-sizing: border-box;
     width: 231px;
@@ -72,7 +62,6 @@
     margin-left: auto;
   }
 }
-
 @media (min-width: $desktop-width) {
   .page-header {
     width: 100%;
