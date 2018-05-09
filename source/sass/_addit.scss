@@ -15,15 +15,13 @@
 
 .addit__legend {
   position: relative;
+  margin: 8.5px 0 4px;
   padding: 0;
-  margin: 0;
-
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
   line-height: 17px;
   color: $blue;
-
   text-transform: uppercase;
 }
 
@@ -43,14 +41,12 @@
   height: 142px;
   margin-top: 21px;
   padding: 15px;
-
   font-family: $default-font;
   font-size: 17px;
-  line-height:18px;
+  line-height: 18px;
   color: #d2d2d2;
-
   border: 2px solid $gray;
-  outline: none;
+  outline: transparent;
 }
 
 .addit__input:hover {
@@ -62,12 +58,11 @@
   border: 2px solid #62d1ba;
 }
 
-
 @media (min-width: $tablet-width) {
   .addit {
     box-sizing: border-box;
     width: 100%;
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
 
   .addit__container {
@@ -75,15 +70,15 @@
     flex-direction: row;
     width: $tablet-content-width;
     min-height: 144px;
+    padding-left: 2px;
   }
 
   .addit__legend {
     box-sizing: border-box;
-    width: 167px;
+    width: 165px;
     min-height: 144px;
     margin: 0;
-    padding: 0;
-    padding-top: 37px;
+    padding: 16px 0 0;
   }
 
   .addit__legend::after {
@@ -93,18 +88,18 @@
   .addit__input {
     box-sizing: border-box;
     width: 501px;
-    min-height: 144px;
-    margin: 0;
-    padding: 0;
-    padding-top: 10px;
-    padding-left: 17px;
-
+    min-height: 142px;
+    margin: 0 0 0 2px;
+    padding: 12px 0 0 14px;
     font-size: 19px;
     line-height: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .addit {
+    margin-bottom: 47px;
+  }
 
   .addit__container {
     width: $desktop-content-width;
@@ -112,9 +107,11 @@
 
   .addit__legend {
     width: 175px;
+    padding-left: 62px;
   }
 
   .addit__input {
     width: 700px;
+    margin-left: -3px;
   }
 }

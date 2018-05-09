@@ -16,50 +16,44 @@
 
 .email__legend {
   position: relative;
+  margin: 8.5px 0 6.5px;
   padding: 0;
-  margin: 0;
-
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
   line-height: 17px;
   color: $blue;
-
   text-transform: uppercase;
 }
 
 .email__legend::after {
   content: "";
   position: absolute;
+  top: 55%;
+  right: 0;
   display: block;
   width: 179px;
   height: 1px;
-  top: 55%;
-  right: 0;
   background-color: #62d1ba;
 }
 
 .email__input {
   box-sizing: border-box;
   height: 52px;
-
   font-family: $default-font;
   font-size: 17px;
-  line-height:18px;
+  line-height: 18px;
   color: #d2d2d2;
-
   border: none;
-  outline: none;
   border-bottom: 2px solid $black;
+  outline: transparent;
 }
-
 
 .email__svg {
   display: block;
   position: absolute;
-  top: 24px;
-  right: 0;
-
+  top: 43px;
+  right: 4px;
   fill: #cccccc;
 }
 
@@ -80,14 +74,13 @@
   fill: #62d1ba;
 }
 
-
 @media (min-width: $tablet-width) {
   .email {
     box-sizing: border-box;
     width: 100%;
-    padding-bottom: 50px;
-    background-color: #f1f1f1;
     margin-bottom: 50px;
+    padding-bottom: 48px;
+    background-color: #f1f1f1;
   }
 
   .email__container {
@@ -95,6 +88,7 @@
     flex-direction: row;
     width: $tablet-content-width;
     height: 77px;
+    padding-left: 2px;
   }
 
   .email__legend {
@@ -102,8 +96,7 @@
     width: 167px;
     height: 77px;
     margin: 0;
-    padding: 0;
-    padding-top: 37px;
+    padding: 40px 0 0;
   }
 
   .email__legend::after {
@@ -113,12 +106,9 @@
   .email__input {
     box-sizing: border-box;
     width: 501px;
-    height: 77px;
+    height: 76px;
     margin: 0;
-    padding: 0;
-    padding-top: 10px;
-    padding-left: 17px;
-
+    padding: 20px 0 0 17px;
     font-size: 19px;
     line-height: 19px;
     background-color: #f1f1f1;
@@ -126,17 +116,19 @@
 
   .email__svg {
     right: 21px;
+    top: 34px;
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .email__container {
     width: $desktop-content-width;
+    padding-left: 0;
   }
 
   .email__legend {
     width: 175px;
+    padding-left: 62px;
   }
 
   .email__input {
@@ -144,6 +136,6 @@
   }
 
   .email__svg {
-    right: 175px;
+    right: 178px;
   }
 }

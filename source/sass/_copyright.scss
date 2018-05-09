@@ -14,13 +14,12 @@
   justify-content: center;
   box-sizing: border-box;
   height: 34px;
-
+  margin-top: -8.5px;
   text-decoration: none;
 }
 
 .copyright__text {
   margin-right: 30px;
-
   font-family: $default-font;
   font-size: 19px;
   line-height: 19px;
@@ -29,21 +28,27 @@
 }
 
 .copyright__svg {
+  margin-top: 7px;
+  margin-right: 0.5px;
   fill: $blue;
 }
 
-.copyright__text:active {
+.copyright__link:hover .copyright__svg {
   fill: #46c1ae;
 }
 
-.copyright__text:active .copyright__svg {
+.copyright__link:active .copyright__svg {
   fill: #bde3dd;
 }
 
+.copyright__link:active .copyright__text {
+  color: #bfbfbf;
+}
 
-
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .copyright {
     width: 190px;
+    margin-top: 9px;
+    padding-left: 10px;
   }
 }

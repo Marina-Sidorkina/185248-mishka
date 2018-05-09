@@ -1,4 +1,3 @@
-
 .size {
   display: flex;
   flex-direction: row;
@@ -13,13 +12,12 @@
   display: none;
 }
 
-.size__button {
+.size__radio + .size__button {
   display: block;
   box-sizing: border-box;
   width: 82px;
   height: 52px;
   padding-top: 17px;
-
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
@@ -28,15 +26,14 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-
   border: 2px solid $gray--light;
   cursor: pointer;
 }
 
-.size__button:hover {
+.size__radio:hover + .size__button {
   border: 2px solid #c7c7c7;
 }
 
-.size__button:active {
+.size__radio:checked + .size__button {
   border: 2px solid #62d1ba;
 }

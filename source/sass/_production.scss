@@ -2,9 +2,7 @@
   box-sizing: border-box;
   width: 320px;
   padding: 0;
-  margin: 0 auto;
-  margin-top: 30px;
-
+  margin: 31px auto 0;
   background-color: $white;
 }
 
@@ -14,9 +12,7 @@
   box-sizing: border-box;
   width: 260px;
   padding: 0;
-  margin: 0 auto;
-  margin-bottom: 58px;
-
+  margin: 0 auto 58px;
   border: 1px solid $gray--light;
 }
 
@@ -37,12 +33,13 @@
   height: 95px;
   padding: 0;
   margin: 0;
+  padding-top: 22.5px;
 }
 
 .production__title {
   position: relative;
   width: 130px;
-  margin-left: 91px;
+  margin-left: 90px;
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
@@ -53,23 +50,22 @@
 .production__title::before {
   content: "";
   position: absolute;
+  top: 7px;
+  left: -56px;
   display: block;
   width: 32px;
   height: 32px;
-  top: 7px;
-  left: -67px;
   background-image: url("../img/icon-video.svg");
 }
 
 .production__description {
   box-sizing: border-box;
-  width: 195px;
-  height: 173px;
+  width: 185px;
+  min-height: 172px;
   padding: 0;
-  margin:  0;
-  padding-top: 34px;
+  margin: 0;
+  padding-top: 27px;
   margin-left: 34px;
-
   font-family: $default-font;
   font-weight: 400;
   font-size: 13px;
@@ -82,9 +78,8 @@
   width: 192px;
   height: 52px;
   padding-top: 15px;
-  margin-left: 34px;
+  margin-left: 33.5px;
   margin-bottom: 32px;
-
   font-family: $default-font;
   font-weight: 700;
   font-size: 17px;
@@ -93,7 +88,7 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid $gray;;
+  border: 2px solid $gray;
   cursor: pointer;
 }
 
@@ -101,11 +96,10 @@
   color: $white;
   background-color: $gray;
 }
-
-
 /*Светлый тон фона кнопки задан через opacity,
 так как в фотошопе он определяется как №444444 ($gray),
 то есть как и у ховера, но визуально явно светлей*/
+
 .production__link:active {
   color: #8d8d8d;
   background-color: $gray;
@@ -115,7 +109,8 @@
 @media (min-width: $tablet-width) {
   .production {
     width: 100%;
-    margin-bottom: 63px;
+    margin-top: 0;
+    margin-bottom: 62.5px;
   }
 
   .production__container {
@@ -136,10 +131,9 @@
   .production__header {
     order: 1;
     width: 586px;
-    height: 100px;
+    height: 95px;
     margin-left: auto;
     margin-right: auto;
-
     font-size: 20px;
     line-height: 24px;
   }
@@ -147,47 +141,51 @@
   .production__title {
     position: relative;
     width: 586px;
-    padding-left: 67px;
-    padding-top: 40px;
+    padding-left: 66px;
+    padding-top: 16px;
     margin: 0;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .production__title::before {
     content: "";
     position: absolute;
+    top: 11px;
+    left: 1px;
     display: block;
     width: 32px;
     height: 32px;
-    top: 34px;;
-    left: 0;
     background-image: url("../img/icon-video.svg");
   }
 
   .production__description {
     order: 2;
     width: 586px;
-    height: 90px;
+    min-height: 95px;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-
     font-size: 15px;
     line-height: 30px;
   }
 
   .production__link {
     order: 3;
-    width: 586px;
+    width: 584px;
     height: 52px;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin-left: 42px;
+    margin-bottom: 45px;
     font-size: 17px;
     line-height: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .production {
+    margin-bottom: 106px;
+  }
+
   .production__container {
     width: $desktop-content-width;
     min-height: 455px;
@@ -200,35 +198,35 @@
 
   .production__header {
     width: 232px;
-    height: 134px;
+    min-height: 132px;
     margin: 0;
     padding: 0;
-    margin-left: 762px;
+    margin-left: 760px;
     margin-top: -410px;
   }
 
   .production__title {
     padding-left: 0;
     padding-right: 100px;
+    padding-top: 51px;
   }
 
   .production__title::before {
-    top: 0;
+    top: -3px;
     left: 0;
   }
 
   .production__description {
     width: 232px;
-    height: 165px;
+    min-height: 166px;
     margin: 0;
     padding: 0;
-    margin-left: 762px;
+    margin-left: 760px;
   }
 
   .production__link {
-    width: 232px;
+    width: 230px;
     height: 52px;
-    margin: 0;
-    margin-left: 762px;
+    margin: 0 0 0 762px;
   }
 }

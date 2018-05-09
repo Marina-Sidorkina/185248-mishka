@@ -2,25 +2,22 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-
   font-family: $default-font;
   font-weight: 400;
   color: $gray;
-
   background-color: #f1f1f1;
 }
 
 .page-footer__container {
   display: flex;
   flex-direction: column;
-
   box-sizing: border-box;
   width: 260px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.psge-footer__logo {
+.page-footer__logo {
   display: none;
 }
 
@@ -43,8 +40,32 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 190px;
-    height: 143px;
+    width: 102px;
+    height: 35px;
+    margin-top: -8px;
+    margin-left: 2px;
+    fill: #231f20;
+    cursor: pointer;
+  }
+
+  .page-footer__logo:hover {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo:active {
+    fill: #bde3dd;
+  }
+
+  .page-footer__logo--index {
+    cursor: default;
+  }
+
+  .page-footer__logo--index:hover {
+    fill: #231f20;
+  }
+
+  .page-footer__logo--index:active {
+    fill: #231f20;
   }
 }
 
