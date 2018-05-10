@@ -83,7 +83,7 @@ gulp.task("clean", function () {
 
 gulp.task("serve", function() {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
