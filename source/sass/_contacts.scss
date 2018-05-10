@@ -118,7 +118,7 @@
   margin: 0 auto;
   padding: 0;
   background-image: url("../img/map-mobile@1x.jpg") no-repeat center;
-  
+
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/map-mobile@2x.jpg");
     background-size: 320px 457px;
