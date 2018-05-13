@@ -16,10 +16,10 @@ gulp.task("style", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"));
+    .pipe(gulp.dest("build/css"));
 });
 
 var imagemin = require("gulp-imagemin");
@@ -83,7 +83,7 @@ gulp.task("clean", function () {
 
 gulp.task("serve", function() {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
