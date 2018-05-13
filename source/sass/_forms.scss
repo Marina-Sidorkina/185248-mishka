@@ -64,11 +64,9 @@
 /*Светлый тон фона кнопки задан через opacity,
 так как в фотошопе он определяется как №444444 ($gray),
 то есть как и у ховера, но визуально явно светлей*/
-
 .forms__button:active {
-  color: #8d8d8d;
+  color: rgba(255, 255, 255, 0.302);
   background-color: $gray;
-  opacity: 0.9;
 }
 
 @media (min-width: $tablet-width) {

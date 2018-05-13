@@ -191,7 +191,9 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     width: 668px;
+    height: 118px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -210,15 +212,23 @@
   .promo__wrapper {
     align-items: flex-start;
     width: 334px;
-    height: 118px;
     padding-left: 36px;
     padding-top: 34px;
   }
 
   .promo__item {
     width: 334px;
-    height: 118px;
+    height: auto;
     margin-top: -0.5px;
+  }
+
+  .promo__item:hover {
+    height: 123px;
+    transform: translateY(-5px);
+  }
+
+  .promo__items:hover .promo__items::after {
+    bottom: -7px;
   }
 
   .promo__item--interior {

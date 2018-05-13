@@ -35,7 +35,7 @@
 }
 
 .video-block__button:active .video-block__svg {
-  fill: #d0f1ea;
+  opacity: 0.3;
   transform: scale(0.8);
   transition: 0.2s linear 0s;
 }

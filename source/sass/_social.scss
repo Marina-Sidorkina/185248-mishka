@@ -28,7 +28,7 @@
 }
 
 .social__svg {
-  fill: "#231F20";
+  fill: #221f1f;
 }
 
 .social__link:hover .social__svg {
@@ -36,7 +36,8 @@
 }
 
 .social__link:active .social__svg {
-  fill: #bde3dd;
+  fill: #46c1ae;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

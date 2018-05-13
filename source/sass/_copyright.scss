@@ -38,11 +38,12 @@
 }
 
 .copyright__link:active .copyright__svg {
-  fill: #bde3dd;
+  fill: #46c1ae;
+  opacity: 0.3;
 }
 
 .copyright__link:active .copyright__text {
-  color: #bfbfbf;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

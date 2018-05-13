@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   </head>
   <body class="page-body">
 
@@ -169,7 +171,7 @@
           </picture>
           <div class="advert__add">
             <span class="advert__price">Цена: 990 руб.</span>
-            <a class="advert__order" href="#">Заказать</a>
+            <a class="advert__order" href="order-form.html">Заказать</a>
           </div>
         </div>
       </section>
@@ -219,7 +221,7 @@
               <tbody class="contacts__table">
                 <tr class="contacts__row contacts__row--email">
                   <td class="contacts__cat">e-mail:</td>
-                  <td class="contacts__value"><a class="contacts__value--email" href="#">info@mimimishkashop.ru</a></td>
+                  <td class="contacts__value"><a class="contacts__email" href="#">info@mimimishkashop.ru</a></td>
                 </tr>
                 <tr class="contacts__row contacts__row--address">
                   <td class="contacts__cat">адрес:</td>
@@ -296,6 +298,7 @@
         </form>
       </div>
     </div>
+    <div class="page-body__overlay"></div>
 
     <script src="js/picturefill.min.js"></script>
     <script src="js/script.js"></script>

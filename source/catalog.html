@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   </head>
   <body class="page-body">
 
@@ -153,7 +155,7 @@
               <div class="product-item__spec">
                 <div class="product-item__spec-container">
                   <span class="product-item__price">1 200 руб.</span>
-                  <a class="product-item__cart" href="#" aria-label="Добавить в корзину">
+                  <a class="product-item__cart" href="order-form.html" aria-label="Добавить в корзину">
                     <svg  class="product-item__svg" width="20.294px" height="18.849px">
                       <use xlink:href="#catalog__cart"></use>
                     </svg>
@@ -181,7 +183,7 @@
               <div class="product-item__spec">
                 <div class="product-item__spec-container">
                   <span class="product-item__price">690 руб.</span>
-                  <a class="product-item__cart product-item__cart--bowl" href="#" aria-label="Добавить в корзину">
+                  <a class="product-item__cart product-item__cart--bowl" href="order-form.html" aria-label="Добавить в корзину">
                     <svg  class="product-item__svg" width="20.294px" height="18.849px">
                       <use xlink:href="#catalog__cart"></use>
                     </svg>
@@ -209,7 +211,7 @@
               <div class="product-item__spec">
                 <div class="product-item__spec-container">
                   <span class="product-item__price">1 500 руб.</span>
-                  <a class="product-item__cart product-item__cart--toys" href="#" aria-label="Добавить в корзину">
+                  <a class="product-item__cart product-item__cart--toys" href="order-form.html" aria-label="Добавить в корзину">
                     <svg  class="product-item__svg" width="20.294px" height="18.849px">
                       <use xlink:href="#catalog__cart"></use>
                     </svg>
@@ -302,6 +304,7 @@
         </form>
       </div>
     </div>
+    <div class="page-body__overlay"></div>
 
     <script src="js/picturefill.min.js"></script>
     <script src="js/script.js"></script>

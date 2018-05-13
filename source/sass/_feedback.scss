@@ -125,11 +125,11 @@
 }
 
 .feedback__arrow:hover .feedback__svg {
-  fill: #666666;
+  opacity: 0.6;
 }
 
 .feedback__arrow:active .feedback__svg {
-  fill: #b2b2b2;
+  opacity: 0.3;
 }
 
 .feedback__add-link {
@@ -158,18 +158,16 @@
 /*Светлый тон фона кнопки задан через opacity,
 так как в фотошопе он определяется как №444444 ($gray),
 то есть как и у ховера, но визуально явно светлей*/
-
 .feedback__add-link:active {
-  color: #8d8d8d;
+  color: rgba(255, 255, 255, 0.302);
   background-color: $gray;
-  opacity: 0.9;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
     width: $tablet-width;
     margin-bottom: 45px;
-    padding-bottom: 87px;
+    padding-bottom: 85px;
   }
 
   .feedback__container {
@@ -240,7 +238,7 @@
   }
 
   .feedback__author {
-    margin-top: 17px;
+    margin-top: 16px;
     margin-left: 3px;
     font-size: 18px;
     line-height: 24px;
@@ -258,7 +256,7 @@
 
   .feedback__toggle {
     width: 175px;
-    margin-top: 47px;
+    margin-top: 45px;
     margin-right: -1px;
     border: none;
   }
@@ -307,6 +305,8 @@
 
   .feedback__author {
     margin-top: -33px;
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .feedback__toggle {
