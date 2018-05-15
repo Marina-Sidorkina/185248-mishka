@@ -45,21 +45,23 @@
 }
 
 .navigation__link:hover {
-  color: #c0c0c0;
+  opacity: 0.6;
 }
 
 .navigation__link:active {
-  color: #cecece;
+  opacity: 0.3;
 }
 
 .navigation__link--catalog:hover,
 .navigation__link--form:hover {
   color: $black;
+  opacity: 1;
 }
 
 .navigation__link--catalog:active,
 .navigation__link--form:active {
   color: $black;
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {
