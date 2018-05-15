@@ -22,11 +22,11 @@
   background-color: $white;
 }
 
-.product-item__container:hover {
+.product-item__container:hover .product-item__info {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.product-item__container:active {
+.product-item__container:active .product-item__info {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -182,6 +182,14 @@
     height: 334px;
   }
 
+  .product-item__info {
+    display: block;
+    min-height: 333px;
+    width: 334px;
+    margin-left: 334px;
+    margin-top: -334px;
+  }
+
   .product-item__description {
     order: 1;
     display: flex;
@@ -190,8 +198,6 @@
     box-sizing: border-box;
     width: 334px;
     min-height: 260px;
-    margin-left: 334px;
-    margin-top: -334px;
     padding: 25px 0 0 27px;
   }
 
