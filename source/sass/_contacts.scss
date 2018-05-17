@@ -300,6 +300,11 @@
     width: $desktop-content-width;
   }
 
+  .contacts__table {
+    display: block;
+    box-sizing: border-box;
+  }
+
   .contacts__main {
     order: 1;
     width: 351px;

@@ -73,16 +73,27 @@
   width: 40px;
   height: 62px;
   background: transparent url("../img/icon-interior.svg") no-repeat;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 .promo__item--interior:hover {
   background-color: #59d5bc;
 }
 
+.promo__item--interior:hover .promo__wrapper--interior::before {
+  opacity: 0.7;
+}
+
 .promo__item--interior:active {
   background-color: #59d5bc;
-  opacity: 0.9;
+}
+
+.promo__item--interior:active .promo__wrapper--interior::before {
+  opacity: 0.3;
+}
+
+.promo__item--interior:active .promo__title--interior {
+  opacity: 0.3;
 }
 
 .promo__item--toy {
@@ -93,9 +104,20 @@
   background-color: #46c1ae;
 }
 
+.promo__item--toy:hover .promo__wrapper--toy::before {
+  opacity: 0.7;
+}
+
 .promo__item--toy:active {
   background-color: #46c1ae;
-  opacity: 0.9;
+}
+
+.promo__item--toy:active .promo__wrapper--toy::before {
+  opacity: 0.3;
+}
+
+.promo__item--toy:active .promo__title--toy {
+  opacity: 0.3;
 }
 
 .promo__wrapper--toy::before {
@@ -106,7 +128,7 @@
   width: 60px;
   height: 60px;
   background: transparent url("../img/icon-toy.svg") no-repeat;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 .promo__wrapper {
